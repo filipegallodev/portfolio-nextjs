@@ -1,0 +1,44 @@
+.header {
+  background: #5e0ce2;
+  width: 100%;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 0 0 12px #5e0ce2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.logo span {
+  font-size: 3.25rem;
+  color: #fff;
+}
+.logo img {
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.nav ul li a {
+  padding: 12px;
+}
+.nav ul li:hover {
+  color: #fc6;
+}/*# sourceMappingURL=header.module.css.map */
