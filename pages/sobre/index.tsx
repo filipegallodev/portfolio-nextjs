@@ -4,7 +4,7 @@ import Header from "../../components/Header/Header";
 
 const Sobre = () => {
   return (
-    <React.Fragment>
+    <div className="primary-container">
       <Head>
         <title>Filipe Gallo - Sobre</title>
       </Head>
@@ -12,9 +12,7 @@ const Sobre = () => {
       <Header />
 
       <main>Tela sobre</main>
-
-      <footer></footer>
-    </React.Fragment>
+    </div>
   );
 };
 

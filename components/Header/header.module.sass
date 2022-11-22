@@ -2,10 +2,12 @@ $text-color: #fff
 $text-hover: #fc6
 $background: #5e0ce2
 
-.header
+.navContainer
+  position: fixed
+  right: 0
   background: $background
-  width: 100%
-  height: 128px
+  height: 100%
+  width: 200px
   display: flex
   align-items: center
   justify-content: space-around
@@ -26,11 +28,13 @@ $background: #5e0ce2
     max-width: 48px
     max-height: 48px
 
-.nav
+.navList
   ul
     display: flex
-    flex-wrap: wrap
+    flex-direction: column
     gap: 24px
+    padding: 0
+    list-style-type: none
 
     li
       list-style: none

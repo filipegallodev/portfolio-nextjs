@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 
 export default function Home() {
   return (
-    <div>
+    <div className="primary-container">
       <Head>
         <title>Filipe Gallo - Desenvolvedor Front-End</title>
         <meta
@@ -16,8 +16,6 @@ export default function Home() {
       <Header />
 
       <main>Tela inicial</main>
-
-      <footer></footer>
     </div>
   );
 }
