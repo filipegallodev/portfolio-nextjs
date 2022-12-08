@@ -8,9 +8,6 @@
 # testing
 /coverage
 
-#css map files
-*.css.map
-
 # next.js
 /.next/
 /out/

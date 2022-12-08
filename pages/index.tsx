@@ -1,21 +1,20 @@
 import Head from "next/head";
-import Header from "../components/Header/Header";
 
 export default function Home() {
   return (
-    <div className="primary-container">
+    <div>
       <Head>
-        <title>Filipe Gallo - Desenvolvedor Front-End</title>
+        <title>Filipe Gallo | Desenvolvedor Front-End</title>
         <meta
           name="description"
-          content="Site oficial do Desenvolvedor Front-End Filipe Gallo com portfólio de projetos e outras informações."
+          content="Site oficial do Desenvolvedor Front-End Filipe Gallo."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <main></main>
 
-      <main>Tela inicial</main>
+      <footer></footer>
     </div>
   );
 }
