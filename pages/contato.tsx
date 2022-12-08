@@ -4,14 +4,14 @@ import Header from "../components/Header";
 
 const Contato = () => {
   return (
-    <div>
+    <React.Fragment>
       <Head>
         <title>Filipe Gallo | Contato</title>
         <meta name="description" content="Entre em contato comigo." />
       </Head>
       <Header />
       <main className="animeLeft">Contato</main>
-    </div>
+    </React.Fragment>
   );
 };
 

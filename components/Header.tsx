@@ -1,12 +1,35 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 import styles from "../styles/header.module.css";
 
 import devLogo from "../public/assets/dev.png";
-import Image from "next/image";
+
+const routes = [
+  {
+    name: "Home",
+    route: "/",
+  },
+  {
+    name: "Sobre",
+    route: "/sobre",
+  },
+  {
+    name: "Projetos",
+    route: "/projetos",
+  },
+  {
+    name: "Contato",
+    route: "/contato",
+  },
+];
 
 const Header = () => {
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
   return (
     <header>
       <div className={styles.header}>
@@ -16,18 +39,16 @@ const Header = () => {
         </span>
         <nav>
           <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="sobre">Sobre</Link>
-            </li>
-            <li>
-              <Link href="projetos">Projetos</Link>
-            </li>
-            <li>
-              <Link href="contato">Contato</Link>
-            </li>
+            {routes.map(({ name, route }) => (
+              <li key={name}>
+                <Link
+                  href={route}
+                  className={currentRoute === `${route}` ? "active" : ""}
+                >
+                  {name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
         <div>

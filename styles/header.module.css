@@ -37,5 +37,9 @@
 }
 
 .header li:hover {
-  color: rgb(0, 255, 255);
+  color: var(--links);
+}
+
+.header :global .active {
+  color: var(--links);
 }
