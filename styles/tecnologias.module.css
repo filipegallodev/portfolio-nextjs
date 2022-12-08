@@ -1,0 +1,27 @@
+.tecnologias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: auto 36px;
+  padding: 0;
+}
+
+.tecnologias li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 20px;
+  background-color: #252525;
+  border-left: 2px solid var(--links);
+  border-radius: 2px 8px 8px 2px;
+  text-align: left;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.tecnologias img {
+  max-width: 64px;
+  height: auto;
+}

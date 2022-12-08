@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 import styles from "../styles/home.module.css";
 
-import filipeFoto from "../public/assets/foto-filipe.webp";
+import filipeFoto from "../public/assets/img/foto-filipe.webp";
 
 export default function Home() {
   return (

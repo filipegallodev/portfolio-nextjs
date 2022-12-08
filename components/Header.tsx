@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 import styles from "../styles/header.module.css";
 
-import devLogo from "../public/assets/dev.png";
+import devLogo from "../public/assets/img/dev.png";
 
 const routes = [
   {
