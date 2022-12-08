@@ -1,0 +1,39 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  height: calc(100vh - 50%);
+}
+
+.home h1 {
+  margin: 0;
+  font-size: 4.5rem;
+}
+
+.home span {
+  font-size: 3rem;
+}
+
+.home span strong {
+  color: var(--main-color);
+}
+
+.home img {
+  width: 480px;
+  height: auto;
+  border-radius: 100%;
+  filter: drop-shadow(0 0 0.75rem var(--main-color));
+  animation: pulseImage 2.5s infinite alternate;
+}
+
+@keyframes pulseImage {
+  from {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0.35rem var(--main-color));
+  }
+  to {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 0.75rem var(--main-color));
+  }
+}

@@ -1,3 +1,20 @@
+:root {
+  --main-color: #dc1457;
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -20,7 +37,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: #f5f5f5;
+    background: #000;
   }
 }
