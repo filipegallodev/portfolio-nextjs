@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Filmes Populares",
+    "id": "filmes-populares",
+    "description": "Aplicação WEB para consulta de filmes e criação de lista de favoritos.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/filmes-populares.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS", "JavaScript", "Fetch", "TMDB API"],
+    "github": "https://github.com/filipegallodev/popular-movies",
+    "test": "https://popular-movies-filipegallodev.vercel.app/"
+  },
+  {
+    "name": "Animais Fantásticos",
+    "id": "animais-fantasticos",
+    "description": "Projeto desenvolvido no curso de JavaScript da Origamid.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/animais-fantasticos.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "ESLint",
+      "Babel",
+      "Webpack",
+      "Fetch"
+    ],
+    "github": "https://github.com/filipegallodev/javascript-origamid/tree/main/projeto-final/animais-fantasticos",
+    "test": "https://animais-fantasticos-origamid-fg.vercel.app/"
+  },
+  {
+    "name": "Decodificador",
+    "id": "decodificador",
+    "description": "Aplicação WEB para criptografar e descriptografar textos.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/decodificador.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS", "JavaScript", "RegExp"],
+    "github": "https://github.com/filipegallodev/alura-challenge-criptografia",
+    "test": "https://filipegallodev.github.io/alura-challenge-criptografia/"
+  },
+  {
+    "name": "App de Lista de Notas",
+    "id": "lista-de-notas",
+    "description": "Aplicação WEB para escrever e salvar notas.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/lista-de-notas.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/filipegallodev/note-list",
+    "test": "https://filipegallodev.github.io/note-list/"
+  },
+  {
+    "name": "Encurtador de Links",
+    "id": "encurtador-de-links",
+    "description": "Aplicação WEB para encurtar links muito grandes.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/encurtador-de-links.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS", "JavaScript", "Fetch"],
+    "github": "https://github.com/filipegallodev/imageUrl-shortner",
+    "test": "https://encurtador-de-links-fg.vercel.app/"
+  },
+  {
+    "name": "Optimus Tech - Vagas",
+    "id": "optimus-tech",
+    "description": "Página estática de vagas de uma empresa fictícia.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/optimus-tech.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS"],
+    "github": "https://github.com/filipegallodev/optimus-tech-vagas",
+    "test": "https://filipegallodev.github.io/optimus-tech-vagas/"
+  }
+]

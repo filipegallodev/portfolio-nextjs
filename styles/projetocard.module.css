@@ -1,21 +1,30 @@
 .projetosContainer {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
   margin: 48px 32px;
 }
 
 .projetoCard {
-  text-align: center;
-  width: 640px;
-  height: 320px;
-  background-color: #222;
+  display: flex;
+  width: 480px;
+  height: auto;
   border-radius: 8px;
-  transition: 0.3s;
-  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
-.projetoCard:hover {
-  background-color: #333;
+.projetoCard img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.projetoCard img:hover {
+  opacity: 0.75;
 }
 
 .projeto {
