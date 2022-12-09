@@ -13,6 +13,7 @@
   justify-content: center;
   gap: 0.5rem;
   font-size: 2rem;
+  color: var(--specific-text-color);
 }
 
 .header img {
@@ -38,9 +39,26 @@
 }
 
 .header li:hover {
-  color: var(--links);
+  color: var(--secundary-color);
 }
 
 .header :global .active {
-  color: var(--links);
+  color: var(--secundary-color);
+}
+
+.themeImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.themeImage span {
+  color: #f5f5f5;
+  font-size: 1.125rem;
+}
+
+.themeImage img {
+  cursor: pointer;
+  width: 100%;
 }
