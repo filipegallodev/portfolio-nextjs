@@ -12,16 +12,16 @@
 
 .sobre .texto p {
   margin: 16px 36px;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   text-align: left;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 .verticalLine {
   border-left: 1px solid var(--main-color);
-  height: 480px;
+  height: 560px;
   position: absolute;
   margin-left: 0px;
   left: 50%;
-  top: 120px;
+  top: 80px;
 }

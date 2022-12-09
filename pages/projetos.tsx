@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Header from "../components/Header";
+import ProjetoCard from "../components/projetos/ProjetoCard";
 
 const Projetos = () => {
   return (
@@ -10,7 +11,11 @@ const Projetos = () => {
         <meta name="description" content="Projetos desenvolvidos por mim." />
       </Head>
       <Header />
-      <main className="animeLeft">Projetos</main>
+      <main className="animeLeft">
+        <div>
+          <ProjetoCard />
+        </div>
+      </main>
     </React.Fragment>
   );
 };

@@ -1,0 +1,23 @@
+.projetosContainer {
+  display: flex;
+  gap: 16px;
+  margin: 48px 32px;
+}
+
+.projetoCard {
+  text-align: center;
+  width: 640px;
+  height: 320px;
+  background-color: #222;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.projetoCard:hover {
+  background-color: #333;
+}
+
+.projeto {
+  margin: 0 32px;
+}
