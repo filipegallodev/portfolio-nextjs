@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   background: #000;
   padding: 32px;
   box-shadow: 0 0 10px #000;
@@ -25,6 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2.5rem;
   margin: 0;
   padding: 0;
@@ -61,4 +63,19 @@
 .themeImage img {
   cursor: pointer;
   width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    gap: 32px;
+  }
+
+  .header span {
+    margin: 32px 0;
+  }
+
+  .header span,
+  .header nav {
+    width: 100%;
+  }
 }
