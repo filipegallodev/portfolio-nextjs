@@ -54,3 +54,13 @@
     margin-bottom: 96px;
   }
 }
+
+@media (max-width: 450px) {
+  .home h1 {
+    font-size: 3.5rem;
+  }
+
+  .home span {
+    font-size: 2rem;
+  }
+}
