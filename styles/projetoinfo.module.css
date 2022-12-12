@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+  margin-bottom: 96px;
 }
 
 .voltar {
@@ -74,4 +75,12 @@
 .botaoExterno button:hover {
   background-color: rgb(255, 208, 18);
   opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
