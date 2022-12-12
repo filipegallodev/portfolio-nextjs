@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 import styles from "../../styles/projetoinfo.module.css";
@@ -8,10 +9,36 @@ const ProjetoInfo = ({ setProjeto, projeto }: any) => {
   }
 
   return (
-    <div className={styles.projeto + " animeLeft"}>
-      <h2>{projeto.name}</h2>
-      <p>{projeto.description}</p>
-      <button onClick={previousButton}>Voltar</button>
+    <div className="animeLeft">
+      <div className={styles.voltar}>
+        <button onClick={previousButton}>← Lista</button>
+      </div>
+
+      <div className={styles.projeto}>
+        <div className={styles.capa}>
+          <Image src={projeto.imageUrl} alt={projeto.name} />
+        </div>
+        <div>
+          <h2>{projeto.name}</h2>
+          <p>{projeto.description}</p>
+          <div className={styles.tecnologias}>
+            <h3>Tecnologias</h3>
+            <ul>
+              {projeto.technologies.map((tecnologia: any) => (
+                <li key={tecnologia}>{tecnologia}</li>
+              ))}
+            </ul>
+          </div>
+          <div className={styles.botaoExterno}>
+            <a href={projeto.test} target="_blank" rel="noreferrer">
+              <button>Teste</button>{" "}
+            </a>
+            <a href={projeto.github} target="_blank" rel="noreferrer">
+              <button>Respositório</button>{" "}
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
