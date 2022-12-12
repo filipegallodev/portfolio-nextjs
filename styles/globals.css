@@ -33,6 +33,10 @@ body {
   background-color: var(--main-background-color);
 }
 
+button {
+  letter-spacing: 0.05rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;

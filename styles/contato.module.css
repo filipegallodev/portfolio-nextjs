@@ -72,7 +72,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 .form button:hover {
@@ -96,14 +96,17 @@
   background-color: var(--card-background-color);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
   padding: 12px 64px;
+  border-left: var(--secundary-color) 2px solid;
   border-radius: 4px;
   color: var(--main-text-color);
   font-weight: 500;
-  opacity: 0.85;
+  opacity: 0.9;
   transition: 0.3s;
 }
 
 .redes a:hover {
+  border-left: var(--secundary-color) 12px solid;
+  padding-right: 54px;
   opacity: 1;
 }
 

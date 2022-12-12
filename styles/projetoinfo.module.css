@@ -7,7 +7,7 @@
 }
 
 .voltar {
-  margin: 32px auto;
+  margin: 48px auto;
   text-align: center;
 }
 
@@ -37,8 +37,18 @@
   box-shadow: 0 0 8px rgba(220, 20, 87, 0.5);
 }
 
+.projetoDesc h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  color: var(--main-color);
+}
+
 .tecnologias {
   margin: 64px 0;
+}
+
+.tecnologias h3 {
+  font-size: 1.45rem;
 }
 
 .tecnologias ul {
@@ -63,6 +73,7 @@
   background-color: var(--secundary-color);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
   border: none;
+  border-left: var(--main-color) 2px solid;
   border-radius: 4px;
   text-align: left;
   font-size: 1.125rem;
@@ -73,6 +84,7 @@
 }
 
 .botaoExterno button:hover {
+  border-left: var(--main-color) 12px solid;
   background-color: rgb(255, 208, 18);
   opacity: 1;
 }

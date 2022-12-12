@@ -18,7 +18,7 @@ const ProjetoInfo = ({ setProjeto, projeto }: any) => {
         <div className={styles.capa}>
           <Image src={projeto.imageUrl} alt={projeto.name} />
         </div>
-        <div>
+        <div className={styles.projetoDesc}>
           <h2>{projeto.name}</h2>
           <p>{projeto.description}</p>
           <div className={styles.tecnologias}>
