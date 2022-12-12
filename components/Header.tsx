@@ -72,11 +72,8 @@ const Header = () => {
     const docStyle = document.documentElement.style;
 
     docStyle.setProperty("--main-text-color", "#050505");
-
     docStyle.setProperty("--main-background-color", "#f5f5f5");
-
     docStyle.setProperty("--card-text-color", "#222");
-
     docStyle.setProperty("--card-background-color", "#ccc");
 
     setThemeImage("/assets/themes-icons/light.png");
@@ -87,11 +84,8 @@ const Header = () => {
     const docStyle = document.documentElement.style;
 
     docStyle.setProperty("--main-text-color", "#f5f5f5");
-
     docStyle.setProperty("--main-background-color", "#050505");
-
     docStyle.setProperty("--card-text-color", "#f5f5f5");
-
     docStyle.setProperty("--card-background-color", "#252525");
 
     setThemeImage("/assets/themes-icons/dark.png");

@@ -1,0 +1,106 @@
+.contato h2 {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.meiosDeContato {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.titulo,
+.mensagem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 1.125rem;
+}
+
+.titulo input,
+.mensagem textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px;
+  background-color: var(--card-background-color);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+  border: 2px #333 solid;
+  border-radius: 8px;
+  resize: none;
+  color: var(--card-text-color);
+  font-size: 1.125rem;
+  font-family: "Rubik", sans-serif;
+  transition: 0.3s;
+}
+
+.titulo input:hover,
+.mensagem textarea:hover {
+  outline: none;
+  border: 2px #666 solid;
+}
+
+.titulo input:focus,
+.mensagem textarea:focus {
+  outline: none;
+  border: 2px #aaa solid;
+}
+
+.form button {
+  width: 100%;
+  max-width: 480px;
+  padding: 12px;
+  background-color: #fe8;
+  box-shadow: 0px 0px 5px #000;
+  border: none;
+  border-radius: 8px;
+  color: #101010;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.75;
+}
+
+.form button:hover {
+  background-color: #fd5;
+  opacity: 1;
+}
+
+.redes ul {
+  padding: 0;
+}
+
+.redes li {
+  list-style: none;
+}
+
+.redes a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  background-color: var(--card-background-color);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+  padding: 10px 32px;
+  border-radius: 4px;
+  color: var(--main-color);
+  font-weight: 500;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.redes a:hover {
+  opacity: 1;
+}
+
+.redes img {
+  width: 100%;
+  max-width: 48px;
+  height: auto;
+}
