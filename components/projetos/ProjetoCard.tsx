@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import styles from "../../styles/projetocard.module.css";
+import ProjetoInfo from "./ProjetoInfo";
 
 const ProjetoCard = () => {
   const [projeto, setProjeto] = React.useState<any>();
@@ -36,11 +37,7 @@ const ProjetoCard = () => {
   return (
     <React.Fragment>
       {projeto ? (
-        <div className={styles.projeto + " animeLeft"}>
-          <h2>{projeto.name}</h2>
-          <p>{projeto.description}</p>
-          <button onClick={previousButton}>Voltar</button>
-        </div>
+        <ProjetoInfo setProjeto={setProjeto} projeto={projeto} />
       ) : (
         <div className={styles.projetosContainer}>
           {listaProjetos.map(({ id, name, description, imageUrl }) => (
