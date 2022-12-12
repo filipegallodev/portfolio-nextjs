@@ -34,6 +34,7 @@ const Contato = () => {
           <h2>Conecte-se comigo</h2>
           <div className={styles.meiosDeContato}>
             <div>
+              <h3>Envie um e-mail</h3>
               <form className={styles.form} onSubmit={enviarEmail}>
                 <div className={styles.titulo}>
                   <label htmlFor="titulo">Assunto:</label>
