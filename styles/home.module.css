@@ -38,3 +38,19 @@
     filter: drop-shadow(0 0 0.75rem var(--main-color));
   }
 }
+
+@media (max-width: 1350px) {
+  .home {
+    gap: 0;
+  }
+
+  .home div {
+    width: 100%;
+    text-align: center;
+    margin: 64px 12px 32px 12px;
+  }
+
+  .home img {
+    margin-bottom: 96px;
+  }
+}
