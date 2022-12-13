@@ -45,3 +45,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
