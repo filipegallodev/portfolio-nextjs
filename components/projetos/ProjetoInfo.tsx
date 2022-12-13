@@ -29,7 +29,8 @@ const ProjetoInfo = ({ setProjeto, projeto }: any) => {
               ))}
             </ul>
           </div>
-          <div className={styles.botaoExterno}>
+          <div className={styles.links}>
+            <h3>Links</h3>
             <a href={projeto.test} target="_blank" rel="noreferrer">
               <button>Teste</button>{" "}
             </a>

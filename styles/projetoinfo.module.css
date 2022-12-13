@@ -51,15 +51,17 @@
   margin: 64px 0;
 }
 
-.tecnologias h3 {
-  font-size: 1.45rem;
+.tecnologias h3,
+.links h3 {
+  color: var(--main-text-color);
+  font-size: 1.5rem;
 }
 
 .tecnologias ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 12px;
 }
 
 .tecnologias li {
@@ -70,7 +72,7 @@
   font-size: 1.125rem;
 }
 
-.botaoExterno button {
+.links button {
   margin-bottom: 12px;
   display: block;
   padding: 10px 16px;
@@ -87,7 +89,7 @@
   opacity: 0.85;
 }
 
-.botaoExterno button:hover {
+.links button:hover {
   border-left: var(--main-color) 12px solid;
   background-color: rgb(255, 208, 18);
   opacity: 1;
