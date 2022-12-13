@@ -34,6 +34,19 @@
     "test": "https://popular-movies-filipegallodev.vercel.app/"
   },
   {
+    "name": "Antigo site pessoal com Portfólio",
+    "id": "portfolio-anterior",
+    "description": "Aplicação Web do meu antigo site pessoal com portfólio desenvolvido utilizando JavaScript.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/portfolio-anterior.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/filipegallodev/portfolio",
+    "test": "https://filipegallodev.github.io/portfolio/"
+  },
+  {
     "name": "Animais Fantásticos",
     "id": "animais-fantasticos",
     "description": "Projeto desenvolvido no curso de JavaScript da Origamid.",
