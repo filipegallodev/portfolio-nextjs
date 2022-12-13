@@ -23,13 +23,13 @@
   {
     "name": "Filmes Populares",
     "id": "filmes-populares",
-    "description": "Aplicação WEB para consulta de filmes e criação de lista de favoritos.",
+    "description": "Aplicação Web para consulta de filmes e criação de lista de favoritos.",
     "imageUrl": {
       "src": "/assets/projetos-capas/filmes-populares.webp",
       "width": 1908,
       "height": 1080
     },
-    "technologies": ["HTML", "CSS", "JavaScript", "Fetch", "TMDB API"],
+    "technologies": ["HTML", "CSS", "JavaScript", "Fetch API", "TMDB API"],
     "github": "https://github.com/filipegallodev/popular-movies",
     "test": "https://popular-movies-filipegallodev.vercel.app/"
   },
@@ -49,7 +49,7 @@
       "ESLint",
       "Babel",
       "Webpack",
-      "Fetch"
+      "Fetch API"
     ],
     "github": "https://github.com/filipegallodev/javascript-origamid/tree/main/projeto-final/animais-fantasticos",
     "test": "https://animais-fantasticos-origamid-fg.vercel.app/"
@@ -57,7 +57,7 @@
   {
     "name": "Decodificador",
     "id": "decodificador",
-    "description": "Aplicação WEB para criptografar e descriptografar textos.",
+    "description": "Aplicação Web para criptografar e descriptografar textos.",
     "imageUrl": {
       "src": "/assets/projetos-capas/decodificador.webp",
       "width": 1908,
@@ -70,7 +70,7 @@
   {
     "name": "App de Lista de Notas",
     "id": "lista-de-notas",
-    "description": "Aplicação WEB para escrever e salvar notas.",
+    "description": "Aplicação Web para escrever e salvar notas.",
     "imageUrl": {
       "src": "/assets/projetos-capas/lista-de-notas.webp",
       "width": 1908,
@@ -83,13 +83,13 @@
   {
     "name": "Encurtador de Links",
     "id": "encurtador-de-links",
-    "description": "Aplicação WEB para encurtar links muito grandes.",
+    "description": "Aplicação Web para encurtar links muito grandes.",
     "imageUrl": {
       "src": "/assets/projetos-capas/encurtador-de-links.webp",
       "width": 1908,
       "height": 1080
     },
-    "technologies": ["HTML", "CSS", "JavaScript", "Fetch"],
+    "technologies": ["HTML", "CSS", "JavaScript", "Fetch API"],
     "github": "https://github.com/filipegallodev/imageUrl-shortner",
     "test": "https://encurtador-de-links-fg.vercel.app/"
   },
