@@ -1,5 +1,26 @@
 [
   {
+    "name": "NG.Cash Fictício",
+    "id": "ng-cash",
+    "description": "Aplicação Web Full-Stack fictícia do banco NG.Cash. Importante: Como o plano de hospedagem do Back-End é limitado, o uptime mensal é de apenas 500 horas, se o login/registro não funcionar é por conta disso.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/ng-cash.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "CSS"
+    ],
+    "github": "https://github.com/filipegallodev/ng-cash-app",
+    "test": "https://ngcash-app.vercel.app/"
+  },
+  {
     "name": "Filmes Populares",
     "id": "filmes-populares",
     "description": "Aplicação WEB para consulta de filmes e criação de lista de favoritos.",
