@@ -21,17 +21,17 @@
     "test": "https://ngcash-app.vercel.app/"
   },
   {
-    "name": "Filmes Populares",
-    "id": "filmes-populares",
-    "description": "Aplicação Web para consulta de filmes e criação de lista de favoritos.",
+    "name": "Mundo dos Filmes",
+    "id": "mundo-dos-filmes",
+    "description": "Aplicação Web que exibe os filmes mais populares no momento, possui página com detalhes de cada filme, permite favoritar os filmes preferidos e a consulta de filmes.",
     "imageUrl": {
-      "src": "/assets/projetos-capas/filmes-populares.webp",
+      "src": "/assets/projetos-capas/mundo-dos-filmes.webp",
       "width": 1908,
       "height": 1080
     },
-    "technologies": ["HTML", "CSS", "JavaScript", "Fetch API", "TMDB API"],
-    "github": "https://github.com/filipegallodev/popular-movies",
-    "test": "https://popular-movies-filipegallodev.vercel.app/"
+    "technologies": ["Next.js", "React", "CSS", "Fetch API", "TMDB API"],
+    "github": "https://github.com/filipegallodev/mundo-dos-filmes",
+    "test": "https://mundo-dos-filmes.vercel.app/"
   },
   {
     "name": "Antigo site pessoal com Portfólio",
