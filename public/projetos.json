@@ -29,9 +29,29 @@
       "width": 1908,
       "height": 1080
     },
-    "technologies": ["Next.js", "React", "CSS", "Fetch API", "TMDB API"],
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "CSS",
+      "Fetch API",
+      "TMDB API"
+    ],
     "github": "https://github.com/filipegallodev/mundo-dos-filmes",
     "test": "https://mundo-dos-filmes.vercel.app/"
+  },
+  {
+    "name": "Dogs",
+    "id": "dogs",
+    "description": "Projeto desenvolvido no curso de React da Origamid.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/dogs.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["React", "JavaScript", "Fetch API", "Victory", "CSS"],
+    "github": "https://github.com/filipegallodev/react-origamid/tree/main/dogs",
+    "test": "https://dogs-origamid-fg.vercel.app/"
   },
   {
     "name": "Antigo site pessoal com Portfólio",
