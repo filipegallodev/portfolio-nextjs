@@ -119,9 +119,9 @@
 @media (max-width: 700px) {
   .meiosDeContato {
     display: flex;
+    margin: 36px;
     flex-direction: column-reverse;
-    align-items: center;
-    gap: 64px;
+    gap: 32px;
   }
 
   .form {
