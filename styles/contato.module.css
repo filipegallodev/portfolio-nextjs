@@ -123,8 +123,4 @@
     flex-direction: column-reverse;
     gap: 32px;
   }
-
-  .form {
-    margin: 0 12px;
-  }
 }
