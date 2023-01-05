@@ -3,7 +3,7 @@ import React from "react";
 
 import styles from "../../styles/projetoinfo.module.css";
 
-interface Projeto {
+export interface Projeto {
   name: string;
   id: string;
   description: string;
