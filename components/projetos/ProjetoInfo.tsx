@@ -3,7 +3,26 @@ import React from "react";
 
 import styles from "../../styles/projetoinfo.module.css";
 
-const ProjetoInfo = ({ setProjeto, projeto }: any) => {
+interface Projeto {
+  name: string;
+  id: string;
+  description: string;
+  imageUrl: {
+    src: string;
+    width: number;
+    height: number;
+  };
+  technologies: Array<string>;
+  github: string;
+  test: string;
+}
+
+interface Props {
+  projeto: Projeto;
+  setProjeto: any;
+}
+
+const ProjetoInfo = ({ setProjeto, projeto }: Props) => {
   function previousButton() {
     setProjeto(null);
   }
