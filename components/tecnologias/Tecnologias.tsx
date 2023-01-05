@@ -3,8 +3,17 @@ import React from "react";
 
 import styles from "../../styles/tecnologias.module.css";
 
+interface Tecnologias {
+  name: string;
+  imageUrl: {
+    src: string;
+    width: number;
+    height: number;
+  };
+}
+
 const Tecnologias = () => {
-  const [skills, setSkills] = React.useState<any>();
+  const [skills, setSkills] = React.useState<Array<Tecnologias>>();
 
   React.useEffect(() => {
     fetch("./tecnologias.json")
