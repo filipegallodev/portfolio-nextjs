@@ -1,5 +1,5 @@
 # 🌎 Site com portfólio
-![Capa](https://i.imgur.com/tDpa4et.png)
+![Capa](https://i.imgur.com/taq3N92.png)
 
 ## 🎯 Objetivo
 Meu site com a exposição de projetos desenvolvidos por mim!
