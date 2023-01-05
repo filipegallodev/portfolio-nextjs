@@ -18,12 +18,12 @@ const ProjetoCard = () => {
   function handleClick({ target }: any) {
     const projetoEscolhido = target.parentElement.getAttribute("id");
 
-    const projetoProps = listaProjetos.filter((item: any) => {
+    const projetoProps = listaProjetos.filter((item: Projeto) => {
       return (
         item.id === projetoEscolhido && {
           id: item.id,
           name: item.name,
-          desc: item.desc,
+          desc: item.description,
         }
       );
     });

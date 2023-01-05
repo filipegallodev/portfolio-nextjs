@@ -43,7 +43,7 @@ const ProjetoInfo = ({ setProjeto, projeto }: Props) => {
           <div className={styles.tecnologias}>
             <h3>Tecnologias</h3>
             <ul>
-              {projeto.technologies.map((tecnologia: any) => (
+              {projeto.technologies.map((tecnologia) => (
                 <li key={tecnologia}>{tecnologia}</li>
               ))}
             </ul>

@@ -25,7 +25,7 @@ const Tecnologias = () => {
     <React.Fragment>
       <ul className={styles.tecnologias}>
         {skills &&
-          skills.map(({ name, imageUrl }: any) => (
+          skills.map(({ name, imageUrl }) => (
             <li key={name}>
               <Image src={imageUrl} alt={name} />
               <span>{name}</span>
