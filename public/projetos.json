@@ -43,15 +43,15 @@
   {
     "name": "Dogs",
     "id": "dogs",
-    "description": "Projeto desenvolvido no curso de React da Origamid.",
+    "description": "Projeto desenvolvido nos cursos de React e Redux da Origamid.",
     "imageUrl": {
       "src": "/assets/projetos-capas/dogs.webp",
       "width": 1908,
       "height": 1080
     },
-    "technologies": ["React", "JavaScript", "Fetch API", "Victory", "CSS"],
-    "github": "https://github.com/filipegallodev/react-origamid/tree/main/dogs",
-    "test": "https://dogs-origamid-fg.vercel.app/"
+    "technologies": ["React", "JavaScript", "Redux", "Fetch API", "Victory", "CSS"],
+    "github": "https://github.com/filipegallodev/redux-origamid/tree/main/projeto-redux",
+    "test": "https://redux-origamid.vercel.app/"
   },
   {
     "name": "Antigo site pessoal com Portfólio",
