@@ -49,9 +49,36 @@
       "width": 1908,
       "height": 1080
     },
-    "technologies": ["React", "JavaScript", "Redux", "Fetch API", "Victory", "CSS"],
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Redux",
+      "Fetch API",
+      "Victory",
+      "CSS"
+    ],
     "github": "https://github.com/filipegallodev/redux-origamid/tree/main/projeto-redux",
     "test": "https://redux-origamid.vercel.app/"
+  },
+  {
+    "name": "Sorteador",
+    "id": "sorteador",
+    "description": "Projeto desenvolvido utilizando TDD no curso de React com Jest.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/sorteador.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Jest",
+      "React Testing Library",
+      "TDD",
+      "CSS"
+    ],
+    "github": "https://github.com/filipegallodev/jest-react-alura/tree/main/sorteador-de-amigo-secreto",
+    "test": "https://jest-react-alura.vercel.app/"
   },
   {
     "name": "Antigo site pessoal com Portfólio",
