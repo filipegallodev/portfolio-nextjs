@@ -32,6 +32,14 @@
     }
   },
   {
+    "name": "Redux",
+    "imageUrl": {
+      "src": "/assets/logos/redux-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
     "name": "HTML5",
     "imageUrl": {
       "src": "/assets/logos/html-logo.svg",
