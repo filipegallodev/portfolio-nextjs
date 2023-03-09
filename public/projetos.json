@@ -1,5 +1,24 @@
 [
   {
+    "name": "Next E-commerce",
+    "id": "next-ecommerce",
+    "description": "Um E-commerce fictício com o objetivo de treinar as hard skills com um projeto real utilizando tecnologias modernas.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/next-ecommerce.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Redux",
+      "Styled-components",
+      "Material-UI"
+    ],
+    "github": "https://github.com/filipegallodev/next-ecommerce",
+    "test": "https://next-ecommerce-fg.vercel.app/"
+  },
+  {
     "name": "NG.Cash Fictício",
     "id": "ng-cash",
     "description": "Aplicação Web Full-Stack fictícia do banco NG.Cash. Importante: Como o plano de hospedagem do Back-End é limitado, o uptime mensal é de apenas 500 horas, se o login/registro não funcionar é por conta disso.",
