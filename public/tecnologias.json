@@ -40,21 +40,14 @@
     }
   },
   {
-    "name": "HTML5",
+    "name": "Styled-components",
     "imageUrl": {
-      "src": "/assets/logos/html-logo.svg",
+      "src": "/assets/logos/styled-components-logo.svg",
       "width": 128,
       "height": 128
     }
   },
-  {
-    "name": "CSS3",
-    "imageUrl": {
-      "src": "/assets/logos/css-logo.svg",
-      "width": 128,
-      "height": 128
-    }
-  },
+
   {
     "name": "Sass",
     "imageUrl": {
@@ -83,6 +76,22 @@
     "name": "Git",
     "imageUrl": {
       "src": "/assets/logos/git-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "HTML5",
+    "imageUrl": {
+      "src": "/assets/logos/html-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "CSS3",
+    "imageUrl": {
+      "src": "/assets/logos/css-logo.svg",
       "width": 128,
       "height": 128
     }

@@ -18,23 +18,32 @@ const Sobre = () => {
           <div className={styles.texto}>
             <h2>Um pouco sobre mim</h2>
             <p>
-              Sou um Desenvolvedor Front-End, estou sempre me dedicando todos os
-              dias para evoluir cada vez mais e conseguir contribuir de alguma
-              forma com a comunidade.
+              Hello, World! Sou Desenvolvedor Front-End, tenho 23 anos e sou do
+              estado de São Paulo! Estou sempre focado na evolução constante
+              todos os dias, visando melhorar como desenvolvedor, em suas
+              diversas atividades envolvidas. Tenho o sonho e objetivo de
+              trabalhar na área e fazer o que mais gosto, desenvolver aplicações
+              belas e funcionais.
             </p>
             <p>
-              Gosto bastante de desenvolver aplicações web variadas para me
-              desafiar e treinar meus conhecimentos técnicos.
+              Atualmente, faço faculdade de Análise e Desenvolvimento de
+              Sistemas na UNINTER e faço estágio na área.
             </p>
             <p>
-              Atualmente, em meu estágio, participo ativamente no
-              desenvolvimento de uma aplicação web completa, desde o front-end
-              do sistema até o banco de dados, buscando sempre entregar o melhor
-              para o cliente/usuário.
+              Em meu tempo livre gosto de estar estudando, seja em cursos ou
+              aprendendo na prática algo acompanhando a documentação. Além
+              disso, sempre estou desenvolvendo algum projeto real, para colocar
+              em prática todo o conhecimento adquirido e expor o que consigo
+              fazer.
             </p>
             <p>
-              Sinta-se à vontade para se conectar e conversar comigo por meio
-              dos meus contatos!
+              Gosto muito de aprofundar conhecimentos em tecnologias que já faço
+              uso, para poder tirar o maior proveito e potencial da ferramenta.
+            </p>
+            <p>
+              Enfim, por hora é isso! Sinta-se à vontade para se conectar e
+              conversar comigo por meio dos meus contatos! Ficarei feliz em me
+              conectar com você e respondê-lo{"("}a{")"}.
             </p>
           </div>
           <div className={styles.verticalLine}></div>
