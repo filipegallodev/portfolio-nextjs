@@ -74,7 +74,7 @@ const Header = () => {
     docStyle.setProperty("--main-text-color", "#050505");
     docStyle.setProperty("--main-background-color", "#f5f5f5");
     docStyle.setProperty("--card-text-color", "#222");
-    docStyle.setProperty("--card-background-color", "#ccc");
+    docStyle.setProperty("--card-background-color", "#eee");
     docStyle.setProperty("--form-border", "#111");
 
     setThemeImage("/assets/themes-icons/light.png");

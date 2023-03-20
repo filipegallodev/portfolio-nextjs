@@ -115,6 +115,9 @@ const Submit = styled.button`
   &:hover {
     background-color: var(--button-hover);
   }
+  @media (max-width: 550px) {
+    max-width: 550px;
+  }
 `;
 
 export default ContactForm;
