@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ProjetoCard from "../components/projetos/ProjetoCard";
 
@@ -16,6 +17,7 @@ const Projetos = () => {
           <ProjetoCard />
         </div>
       </main>
+      <Footer />
     </React.Fragment>
   );
 };

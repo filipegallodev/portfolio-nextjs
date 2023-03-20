@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Tecnologias from "../components/tecnologias/Tecnologias";
 
@@ -53,6 +54,7 @@ const Sobre = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </React.Fragment>
   );
 };

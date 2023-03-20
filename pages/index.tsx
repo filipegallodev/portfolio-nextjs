@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import styles from "../styles/home.module.css";
 
 import filipeFoto from "../public/assets/img/foto-filipe.webp";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -32,8 +33,6 @@ export default function Home() {
           <Image src={filipeFoto} alt="Foto de Filipe Gallo" />
         </div>
       </main>
-
-      <footer></footer>
     </React.Fragment>
   );
 }
