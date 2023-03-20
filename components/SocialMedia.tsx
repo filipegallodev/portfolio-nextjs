@@ -7,7 +7,7 @@ import githubLogo from "../public/assets/logos/github-logo.svg";
 const SocialMedia = () => {
   return (
     <Container>
-      <h3>Outros meios</h3>
+      <Title>Outros meios</Title>
       <List>
         <Item>
           <Link
@@ -41,6 +41,11 @@ const Container = styled.div`
     max-width: 48px;
     height: auto;
   }
+`;
+
+const Title = styled.h3`
+  font-size: 1.5em;
+  color: var(--main-color);
 `;
 
 const List = styled.ul`

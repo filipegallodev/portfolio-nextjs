@@ -1,11 +1,9 @@
 import Head from "next/head";
 import React from "react";
 import Header from "../components/Header";
-import Image from "next/image";
-import Form from "../components/Form";
-import linkedinLogo from "../public/assets/logos/linkedin-logo.svg";
-import githubLogo from "../public/assets/logos/github-logo.svg";
-import styles from "../styles/contato.module.css";
+import ContactForm from "../components/Form/ContactForm";
+import styled from "styled-components";
+import SocialMedia from "../components/SocialMedia";
 
 const Contato = () => {
   return (
@@ -16,45 +14,30 @@ const Contato = () => {
       </Head>
 
       <Header />
-
-      <main className="animeLeft">
-        <div className={styles.contato}>
-          <h2>Conecte-se comigo</h2>
-          <div className={styles.meiosDeContato}>
-            <div>
-              <h3>Envie um e-mail</h3>
-              <Form />
-            </div>
-            <div className={styles.redes}>
-              <h3>Minhas redes</h3>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/filipegallo/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Image src={linkedinLogo} alt="LinkedIn" />
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/filipegallodev"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Image src={githubLogo} alt="GitHub" />
-                    GitHub
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </main>
+      <Main className="animeLeft">
+        <section>
+          <PageTitle>Entre em contato comigo!</PageTitle>
+          <ContactForm />
+          <SocialMedia />
+        </section>
+      </Main>
     </React.Fragment>
   );
 };
+
+const Main = styled.main`
+  max-width: 800px;
+  margin: 0 auto;
+  @media (max-width: 810px) {
+    margin: 0 24px;
+  }
+`;
+
+const PageTitle = styled.h2`
+  text-align: center;
+  color: var(--main-color);
+  font-size: 1.85rem;
+  margin: 48px 0;
+`;
 
 export default Contato;
