@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import ContactForm from "../components/Form/ContactForm";
 import styled from "styled-components";
 import SocialMedia from "../components/SocialMedia";
+import Footer from "../components/Footer";
 
 const Contato = () => {
   return (
@@ -21,6 +22,7 @@ const Contato = () => {
           <SocialMedia />
         </section>
       </Main>
+      <Footer />
     </React.Fragment>
   );
 };
