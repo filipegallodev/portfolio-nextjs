@@ -19,6 +19,19 @@
     "test": "https://next-ecommerce-fg.vercel.app/"
   },
   {
+    "name": "Jardim Consultoria Ambiental",
+    "id": "jardim-ambiental",
+    "description": "Projeto profissional desenvolvido para a empresa Jardim Consultoria Ambiental.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/jardim-ambiental.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["Next.js", "TypeScript", "Styled-components"],
+    "github": null,
+    "test": "https://www.jardimambiental.com/"
+  },
+  {
     "name": "NG.Cash Fictício",
     "id": "ng-cash",
     "description": "Aplicação Web Full-Stack fictícia do banco NG.Cash. Importante: Como o plano de hospedagem do Back-End é limitado, o uptime mensal é de apenas 500 horas, se o login/registro não funcionar é por conta disso.",

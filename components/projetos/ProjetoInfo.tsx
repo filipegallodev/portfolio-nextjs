@@ -53,9 +53,13 @@ const ProjetoInfo = ({ setProjeto, projeto }: Props) => {
             <a href={projeto.test} target="_blank" rel="noreferrer">
               <button>Teste</button>{" "}
             </a>
-            <a href={projeto.github} target="_blank" rel="noreferrer">
-              <button>Respositório</button>{" "}
-            </a>
+            {projeto.github ? (
+              <a href={projeto.github} target="_blank" rel="noreferrer">
+                <button>Respositório</button>{" "}
+              </a>
+            ) : (
+              <span>Repositório no GitHub indisponível para este projeto.</span>
+            )}
           </div>
         </div>
       </div>
