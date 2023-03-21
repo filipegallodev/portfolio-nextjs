@@ -3,26 +3,13 @@ import React from "react";
 
 import styles from "../../styles/projetoinfo.module.css";
 
-export interface Projeto {
-  name: string;
-  id: string;
-  description: string;
-  imageUrl: {
-    src: string;
-    width: number;
-    height: number;
-  };
-  technologies: Array<string>;
-  github: string;
-  test: string;
-}
-
-interface Props {
-  projeto: Projeto;
-  setProjeto: any;
-}
-
-const ProjetoInfo = ({ setProjeto, projeto }: Props) => {
+const ProjetoInfo = ({
+  setProjeto,
+  projeto,
+}: {
+  setProjeto: React.Dispatch<any>;
+  projeto: IProject;
+}) => {
   function previousButton() {
     setProjeto(null);
   }

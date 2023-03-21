@@ -1,12 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import ProjetoInfo from "./ProjetoInfo";
-import { Projeto } from "./ProjetoInfo";
 
 import styles from "../../styles/projetocard.module.css";
 
 const ProjetoCard = () => {
-  const [projeto, setProjeto] = React.useState<Projeto | null>();
+  const [projeto, setProjeto] = React.useState<IProject | null>();
   const [listaProjetos, setListaProjetos] = React.useState([]);
 
   React.useEffect(() => {
@@ -18,7 +17,7 @@ const ProjetoCard = () => {
   function handleClick({ target }: any) {
     const projetoEscolhido = target.parentElement.getAttribute("id");
 
-    const projetoProps = listaProjetos.filter((item: Projeto) => {
+    const projetoProps = listaProjetos.filter((item: IProject) => {
       return (
         item.id === projetoEscolhido && {
           id: item.id,
