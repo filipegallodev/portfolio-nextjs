@@ -69,7 +69,7 @@ const Link = styled.a`
   background-color: var(--card-background-color);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
   padding: 12px 32px;
-  border-radius: 6px;
+  border-radius: 4px;
   color: var(--main-text-color);
   font-weight: 500;
   transition: 0.1s;
