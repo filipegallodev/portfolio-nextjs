@@ -10,7 +10,7 @@ const Sobre = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Filipe Gallo | Sobre</title>
+        <title>Sobre | Filipe Gallo</title>
         <meta name="description" content="Sobre mim." />
       </Head>
       <Header />
