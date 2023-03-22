@@ -12,3 +12,11 @@ interface IProject {
   test: string;
 }
 
+interface ITechnology {
+  name: string;
+  imageUrl: {
+    src: string;
+    width: number;
+    height: number;
+  };
+}

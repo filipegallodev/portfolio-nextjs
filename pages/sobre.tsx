@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Tecnologias from "../components/tecnologias/Tecnologias";
+import TechnologiesContainer from "../components/Technologies/TechnologiesContainer";
 
 import styles from "../styles/sobre.module.css";
 
@@ -50,7 +50,7 @@ const Sobre = () => {
           <div className={styles.verticalLine}></div>
           <div>
             <h2>Tecnologias</h2>
-            <Tecnologias />
+            <TechnologiesContainer />
           </div>
         </div>
       </main>

@@ -1,12 +1,17 @@
-.tecnologias {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  margin: auto 36px;
-  padding: 0;
-}
+import Image from "next/image";
+import React from "react";
+import styled from "styled-components";
 
-.tecnologias li {
+const TechnologyCard = ({ name, imageUrl }: ITechnology) => {
+  return (
+    <Item key={name}>
+      <Image src={imageUrl} alt={name} />
+      <span>{name}</span>
+    </Item>
+  );
+};
+
+const Item = styled.li`
   list-style: none;
   display: flex;
   align-items: center;
@@ -20,32 +25,21 @@
   text-align: left;
   font-size: 1.125rem;
   color: var(--card-text-color);
-}
-
-.tecnologias img {
-  max-width: 48px;
-  height: auto;
-}
-
-@media (max-width: 500px) {
-  .tecnologias li {
+  & img {
+    max-width: 48px;
+    height: auto;
+  }
+  @media (max-width: 500px) {
     display: flex;
     flex-direction: column;
     padding: 20px;
   }
-}
-
-@media (max-width: 420px) {
-  .tecnologias {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .tecnologias li {
+  @media (max-width: 420px) {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 12px 16px;
   }
-}
+`;
+
+export default TechnologyCard;
