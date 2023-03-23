@@ -11,7 +11,7 @@ const Projetos = () => {
   const [project, setProject] = useState<IProject>();
 
   useEffect(() => {
-    fetch("/projetos.json")
+    fetch("/projects.json")
       .then((res) => res.json())
       .then((data) =>
         setProject(data.find((data: IProject) => data.id === id))

@@ -66,6 +66,11 @@ const Container = styled.div`
       margin-bottom: 96px;
     }
   }
+  @media (max-width: 510px) {
+    & img {
+      max-width: 90%;
+    }
+  }
 `;
 
 const Info = styled.div`

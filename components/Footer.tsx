@@ -26,7 +26,7 @@ const Container = styled.div`
 
 const Text = styled.p`
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: var(--main-text-color);
 `;
 
