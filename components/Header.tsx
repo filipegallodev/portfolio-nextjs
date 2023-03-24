@@ -2,10 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-
-import styles from "../styles/header.module.css";
-
-import devLogo from "../public/assets/img/dev.png";
+import DevLogo from "../public/assets/img/dev.png";
+import styled from "styled-components";
+import changeTheme from "../helper/changeTheme";
 
 const routes = [
   {
@@ -29,105 +28,124 @@ const routes = [
 const Header = () => {
   const router = useRouter();
   const currentRoute = router.pathname;
-
-  const [theme, setTheme] = React.useState("");
-  const [themeImage, setThemeImage] = React.useState(
-    "/assets/themes-icons/dark.png"
-  );
+  const [theme, setTheme] = React.useState({
+    name: "",
+    imageUrl: "",
+  });
 
   React.useEffect(() => {
     const savedTheme = localStorage.getItem("user-theme");
-
-    if (savedTheme === "light") {
-      return setLightTheme();
-    }
-
-    localStorage.setItem("user-theme", "dark");
-    setDarkTheme();
+    if (savedTheme === "light") return setTheme({ ...changeTheme("dark") });
+    if (savedTheme === "dark") return setTheme({ ...changeTheme("light") });
   }, []);
 
-  React.useEffect(() => {
-    if (theme) {
-      localStorage.setItem("user-theme", theme);
-    }
-  }, [theme]);
-
-  function changeTheme() {
-    const savedTheme = getSavedTheme();
-
-    if (savedTheme === "dark") {
-      setLightTheme();
-    }
-
-    if (savedTheme === "light") {
-      setDarkTheme();
-    }
-  }
-
-  function getSavedTheme() {
-    return localStorage.getItem("user-theme");
-  }
-
-  function setLightTheme() {
-    const docStyle = document.documentElement.style;
-
-    docStyle.setProperty("--main-text-color", "#050505");
-    docStyle.setProperty("--main-background-color", "#f5f5f5");
-    docStyle.setProperty("--card-text-color", "#222");
-    docStyle.setProperty("--card-background-color", "#eee");
-    docStyle.setProperty("--form-border", "#111");
-
-    setThemeImage("/assets/themes-icons/light.png");
-    setTheme("light");
-  }
-
-  function setDarkTheme() {
-    const docStyle = document.documentElement.style;
-
-    docStyle.setProperty("--main-text-color", "#f5f5f5");
-    docStyle.setProperty("--main-background-color", "#050505");
-    docStyle.setProperty("--card-text-color", "#f5f5f5");
-    docStyle.setProperty("--card-background-color", "#252525");
-    docStyle.setProperty("--form-border", "#dc1457");
-
-    setThemeImage("/assets/themes-icons/dark.png");
-    setTheme("dark");
+  function handleChangeTheme() {
+    if (theme.name) return setTheme({ ...changeTheme(theme.name) });
+    return setTheme({ ...changeTheme("dark") });
   }
 
   return (
     <header>
-      <div className={styles.header}>
-        <span>
+      <Container>
+        <Logo>
           Filipe Gallo
-          <Image src={devLogo} alt="Logo Dev" />
-        </span>
-        <nav>
-          <ul>
+          <Image src={DevLogo} alt="Logo Dev" className="dev-icon" />
+        </Logo>
+        <NavContainer>
+          <NavList>
             {routes.map(({ name, route }) => (
-              <li key={name}>
+              <NavItem key={name}>
                 <Link
                   href={route}
                   className={currentRoute === `${route}` ? "active" : ""}
                 >
                   {name}
                 </Link>
-              </li>
+              </NavItem>
             ))}
-          </ul>
-        </nav>
-        <div className={styles.themeImage}>
-          <span>Tema</span>
+          </NavList>
+        </NavContainer>
+        <ThemeContainer>
           <Image
-            onClick={changeTheme}
-            src={themeImage}
+            onClick={handleChangeTheme}
+            src={
+              theme.imageUrl ? theme.imageUrl : "/assets/themes-icons/dark.png"
+            }
             alt="Tema"
             width={48}
             height={48}
           />
-        </div>
-      </div>
+        </ThemeContainer>
+      </Container>
     </header>
   );
 };
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #000;
+  padding: 32px;
+  box-shadow: 0 0 10px #000;
+  @media (max-width: 1100px) {
+    gap: 32px;
+  }
+`;
+
+const Logo = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  color: var(--specific-text-color);
+  & .dev-icon {
+    width: 2rem;
+    height: auto;
+  }
+  @media (max-width: 1100px) {
+    margin: 32px 0;
+    width: 100%;
+  }
+`;
+
+const NavContainer = styled.nav`
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+`;
+
+const NavList = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+`;
+
+const NavItem = styled.li`
+  list-style: none;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #bbb;
+  transition: 0.3s;
+  &:hover {
+    color: var(--secundary-color);
+  }
+  & .active {
+    color: var(--secundary-color);
+  }
+`;
+
+const ThemeContainer = styled.div`
+  & img {
+    cursor: pointer;
+    width: 100%;
+  }
+`;
 
 export default Header;
