@@ -27,12 +27,9 @@ const Container = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  margin: auto 36px;
   padding: 0;
-  @media (max-width: 420px) {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
   }
 `;
 

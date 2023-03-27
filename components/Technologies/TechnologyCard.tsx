@@ -17,28 +17,17 @@ const Item = styled.li`
   align-items: center;
   gap: 16px;
   width: 100%;
-  padding: 12px 16px;
+  padding: 16px;
   background-color: var(--card-background-color);
   border-left: 3px solid var(--secundary-color);
-  border-radius: 2px 8px 8px 2px;
+  border-radius: 6px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   text-align: left;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: var(--card-text-color);
   & img {
     max-width: 48px;
     height: auto;
-  }
-  @media (max-width: 500px) {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  @media (max-width: 420px) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px 16px;
   }
 `;
 

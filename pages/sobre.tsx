@@ -10,21 +10,17 @@ const Sobre = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Sobre | Filipe Gallo</title>
+        <title>Sobre | Filipe Gallo | Desenvolvedor Front-End</title>
         <meta name="description" content="Sobre mim." />
       </Head>
       <Header />
       <main className="animeLeft">
         <Container>
-          <div>
-            <SubTitle>Um pouco sobre mim</SubTitle>
-            <AboutText />
-          </div>
-          <VerticalLine />
-          <div>
-            <SubTitle>Tecnologias</SubTitle>
-            <TechnologiesContainer />
-          </div>
+          <PageTitle>Conheça um pouco sobre mim</PageTitle>
+          <SubTitle>Um breve resumo</SubTitle>
+          <AboutText />
+          <SubTitle>Tecnologias</SubTitle>
+          <TechnologiesContainer />
         </Container>
       </main>
       <Footer />
@@ -32,33 +28,26 @@ const Sobre = () => {
   );
 };
 
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
+const Container = styled.section`
+  max-width: 1000px;
+  margin: 0 auto;
   margin-bottom: 96px;
-  @media (max-width: 1000px) {
-    display: flex;
-    flex-direction: column;
+  @media (max-width: 1010px) {
+    margin: 0 24px;
   }
 `;
 
-const SubTitle = styled.h2`
+const PageTitle = styled.h1`
+  text-align: center;
   color: var(--main-color);
   font-size: 1.85rem;
   margin: 48px 0;
 `;
 
-const VerticalLine = styled.div`
-  border-left: 1px solid var(--main-color);
-  height: 560px;
-  position: absolute;
-  margin-left: 0px;
-  left: 50%;
-  top: 80px;
-  @media (max-width: 1000px) {
-    display: none;
-  }
+const SubTitle = styled.h2`
+  font-size: 1.65rem;
+  color: var(--main-color);
+  margin: 40px auto;
 `;
 
 export default Sobre;

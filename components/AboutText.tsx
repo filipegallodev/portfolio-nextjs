@@ -35,10 +35,10 @@ const AboutText = () => {
 };
 
 const Text = styled.p`
-  margin: 16px 36px;
+  margin: 16px 0px;
   line-height: 1.75rem;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 `;
 
 export default AboutText;
