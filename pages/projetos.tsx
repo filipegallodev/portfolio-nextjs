@@ -9,22 +9,26 @@ const Projetos = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Projetos | Filipe Gallo</title>
+        <title>Projetos | Filipe Gallo | Desenvolvedor Front-End</title>
         <meta name="description" content="Projetos desenvolvidos por mim." />
       </Head>
       <Header />
       <main className="animeLeft">
-        <section>
+        <Container>
           <PageTitle>Conheça alguns dos meus projetos</PageTitle>
           <ProjectContainer />
-        </section>
+        </Container>
       </main>
       <Footer />
     </React.Fragment>
   );
 };
 
-const PageTitle = styled.h2`
+const Container = styled.section`
+  margin: 0 24px;
+`;
+
+const PageTitle = styled.h1`
   text-align: center;
   color: var(--main-color);
   font-size: 1.85rem;

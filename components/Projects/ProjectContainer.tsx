@@ -28,7 +28,7 @@ const Container = styled.ul`
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
-  margin: 48px 32px;
+  margin: 48px 0px;
 `;
 
 export default ProjectContainer;
