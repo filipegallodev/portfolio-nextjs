@@ -1,20 +1,25 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import React from "react";
-import styled from "styled-components";
+import React, { useState } from "react";
+import styled, { keyframes } from "styled-components";
 
 const ProjectInfo = (project: IProject) => {
   const { name, description, technologies, test, github, imageUrl } = project;
   const router = useRouter();
+  const [imageLoading, setImageLoading] = useState<boolean>(true);
 
   if (!project) return null;
   return (
     <div className="animeLeft">
       <Back onClick={() => router.back()}>← Lista</Back>
-
       <Container>
         <ImageContainer>
-          <Image src={imageUrl} alt={name} />
+          {imageLoading && <ImageSkeleton />}
+          <Image
+            src={imageUrl}
+            alt={name}
+            onLoad={() => setImageLoading(false)}
+          />
         </ImageContainer>
         <div>
           <Name>{name}</Name>
@@ -77,15 +82,38 @@ const Back = styled.button`
 `;
 
 const ImageContainer = styled.div`
+  width: 900px;
+  height: 508px;
+  display: grid;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 2px solid rgba(220, 20, 87, 0.5);
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(220, 20, 87, 0.5);
   & img {
+    grid-area: 1/1;
     width: 100%;
-    max-width: 900px;
     height: auto;
-    border-radius: 4px;
-    border: 2px solid rgba(220, 20, 87, 0.5);
-    border-radius: 8px;
-    box-shadow: 0 0 4px rgba(220, 20, 87, 0.5);
   }
+`;
+
+const SkeletonAnimation = keyframes`
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -200%;
+  }
+`;
+
+const ImageSkeleton = styled.div`
+  grid-area: 1/1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #eee 0px, #fff 50%, #eee 100%);
+  background-color: #eee;
+  background-size: 200%;
+  animation: ${SkeletonAnimation} 1.5s infinite linear;
 `;
 
 const Name = styled.h2`
