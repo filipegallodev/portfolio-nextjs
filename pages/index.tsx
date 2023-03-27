@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import filipeFoto from "../public/assets/img/foto-filipe.webp";
 
@@ -46,12 +47,12 @@ const PulseImage = keyframes`
 `;
 
 const Container = styled.div`
+  margin-bottom: 96px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10rem;
-  height: calc(100vh - 50%);
   & img {
     width: 100%;
     max-width: 480px;
