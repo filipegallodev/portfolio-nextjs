@@ -82,8 +82,10 @@ const Back = styled.button`
 `;
 
 const ImageContainer = styled.div`
-  width: 900px;
-  height: 508px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 400px;
+  height: 100%;
   display: grid;
   overflow: hidden;
   border-radius: 4px;

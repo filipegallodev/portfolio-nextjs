@@ -33,7 +33,8 @@ const ProjectCard = (project: IProject) => {
 const Card = styled.li`
   display: flex;
   width: 520px;
-  height: 292px;
+  max-height: 292px;
+  height: 100%;
   border: 2px solid rgba(220, 20, 87, 0.5);
   border-radius: 8px;
   box-shadow: 0 0 4px rgba(220, 20, 87, 0.5);
