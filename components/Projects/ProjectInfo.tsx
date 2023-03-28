@@ -10,61 +10,53 @@ const ProjectInfo = (project: IProject) => {
 
   if (!project) return null;
   return (
-    <div className="animeLeft">
+    <Container>
       <Back onClick={() => router.back()}>← Lista</Back>
-      <Container>
-        <ImageContainer>
-          {imageLoading && <ImageSkeleton />}
-          <Image
-            src={imageUrl}
-            alt={name}
-            onLoad={() => setImageLoading(false)}
-          />
-        </ImageContainer>
-        <div>
-          <Name>{name}</Name>
-          <Description>{description}</Description>
-          <TechnologiesContainer>
-            <SubTitle>Tecnologias</SubTitle>
-            <TechnologiesList>
-              {technologies.map((technology) => (
-                <TechnologiesCard key={technology}>
-                  {technology}
-                </TechnologiesCard>
-              ))}
-            </TechnologiesList>
-          </TechnologiesContainer>
-          <div>
-            <SubTitle>Links</SubTitle>
-            <a href={test} target="_blank" rel="noreferrer">
-              <LinkButton>Teste</LinkButton>{" "}
-            </a>
-            {github ? (
-              <a href={github} target="_blank" rel="noreferrer">
-                <LinkButton>Respositório</LinkButton>{" "}
-              </a>
-            ) : (
-              <span>Repositório no GitHub indisponível para este projeto.</span>
-            )}
-          </div>
-        </div>
-      </Container>
-    </div>
+      <ImageContainer>
+        {imageLoading && <ImageSkeleton />}
+        <Image
+          src={imageUrl}
+          alt={name}
+          onLoad={() => setImageLoading(false)}
+        />
+      </ImageContainer>
+      <Title>{name}</Title>
+      <Description>{description}</Description>
+      <SubTitle>Tecnologias</SubTitle>
+      <TechnologiesList>
+        {technologies.map((technology) => (
+          <TechnologiesCard key={technology}>{technology}</TechnologiesCard>
+        ))}
+      </TechnologiesList>
+      <SubTitle>Links</SubTitle>
+      <LinkButton>
+        <a href={test} target="_blank" rel="noreferrer">
+          Teste
+        </a>
+      </LinkButton>
+      {github ? (
+        <LinkButton>
+          <a href={github} target="_blank" rel="noreferrer">
+            Respositório
+          </a>
+        </LinkButton>
+      ) : (
+        <span>Repositório no GitHub indisponível para este projeto.</span>
+      )}
+    </Container>
   );
 };
 
-const Container = styled.div`
-  margin: 0px 32px 96px 32px;
-  display: flex;
-  gap: 32px;
-  @media (max-width: 1200px) {
-    flex-direction: column;
-    align-items: center;
+const Container = styled.section`
+  max-width: 1000px;
+  margin: 0 auto 96px auto;
+  @media (max-width: 1210px) {
+    margin: 0 24px 96px 24px;
   }
 `;
 
 const Back = styled.button`
-  margin: 32px;
+  margin: 24px 0 24px 0;
   padding: 16px 48px;
   background-color: var(--main-color);
   border: none;
@@ -80,9 +72,9 @@ const Back = styled.button`
 `;
 
 const ImageContainer = styled.div`
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
-  max-height: 508px;
+  max-height: 400px;
   height: 100%;
   display: grid;
   overflow: hidden;
@@ -116,23 +108,21 @@ const ImageSkeleton = styled.div`
   animation: ${SkeletonAnimation} 1.5s infinite linear;
 `;
 
-const Name = styled.h2`
-  margin: 0;
+const Title = styled.h2`
+  margin-top: 24px;
   font-size: 1.75rem;
   color: var(--main-color);
 `;
 
 const Description = styled.p`
-  font-size: 1.25rem;
-`;
-
-const TechnologiesContainer = styled.div`
-  margin: 64px 0;
+  font-size: 1.35rem;
 `;
 
 const SubTitle = styled.h3`
-  color: var(--main-text-color);
+  color: var(--main-color);
   font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 48px;
 `;
 
 const TechnologiesList = styled.ul`
@@ -147,7 +137,7 @@ const TechnologiesCard = styled.li`
   background-color: var(--card-background-color);
   padding: 12px 20px;
   border-radius: 4px;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 `;
 
@@ -159,16 +149,14 @@ const LinkButton = styled.button`
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border: none;
   border-radius: 4px;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 500;
   transition: 0.1s;
   cursor: pointer;
-  opacity: 0.85;
   &:hover {
     border-right: var(--main-color) 4px solid;
     padding-right: 20px;
     background-color: rgb(255, 208, 18);
-    opacity: 1;
   }
 `;
 
