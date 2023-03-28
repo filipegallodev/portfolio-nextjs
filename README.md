@@ -7,8 +7,13 @@ Meu site com a exposição de projetos desenvolvidos por mim!
 ## 📰 Conteúdo
 - Home
 - Sobre
+  - Descrição
+  - Tecnologias
 - Projetos
+  - Informações
 - Contato
+  - Formulário
+  - Redes sociais
 
 ## 🔗 Link para acesso
 https://filipegallo.dev/
