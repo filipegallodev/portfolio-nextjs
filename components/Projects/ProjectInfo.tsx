@@ -29,20 +29,18 @@ const ProjectInfo = (project: IProject) => {
         ))}
       </TechnologiesList>
       <SubTitle>Links</SubTitle>
-      <LinkButton>
-        <a href={test} target="_blank" rel="noreferrer">
+      <LinksContainer>
+        <LinkButton href={test} target="_blank" rel="noreferrer">
           Teste
-        </a>
-      </LinkButton>
-      {github ? (
-        <LinkButton>
-          <a href={github} target="_blank" rel="noreferrer">
-            Respositório
-          </a>
         </LinkButton>
-      ) : (
-        <span>Repositório no GitHub indisponível para este projeto.</span>
-      )}
+        {github ? (
+          <LinkButton href={github} target="_blank" rel="noreferrer">
+            Respositório
+          </LinkButton>
+        ) : (
+          <span>Repositório no GitHub indisponível para este projeto.</span>
+        )}
+      </LinksContainer>
     </Container>
   );
 };
@@ -50,7 +48,7 @@ const ProjectInfo = (project: IProject) => {
 const Container = styled.section`
   max-width: 1000px;
   margin: 0 auto 96px auto;
-  @media (max-width: 1210px) {
+  @media (max-width: 1010px) {
     margin: 0 24px 96px 24px;
   }
 `;
@@ -141,12 +139,18 @@ const TechnologiesCard = styled.li`
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 `;
 
-const LinkButton = styled.button`
+const LinksContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const LinkButton = styled.a`
   margin-bottom: 12px;
-  display: block;
   padding: 10px 24px;
   background-color: var(--secundary-color);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  color: #000;
   border: none;
   border-radius: 4px;
   font-size: 1.25rem;
