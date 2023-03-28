@@ -55,11 +55,9 @@ const ProjectInfo = (project: IProject) => {
 
 const Container = styled.div`
   margin: 0px 32px 96px 32px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 32px;
-  @media (max-width: 1000px) {
-    display: flex;
+  @media (max-width: 1200px) {
     flex-direction: column;
     align-items: center;
   }
