@@ -2,9 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
-import filipeFoto from "../public/assets/img/foto-filipe.webp";
+import FilipePhoto from "../public/assets/img/foto-filipe.webp";
 
 export default function Home() {
   return (
@@ -28,7 +27,7 @@ export default function Home() {
               Desenvolvedor <Strong>Front-End</Strong>
             </Headline>
           </Info>
-          <Image src={filipeFoto} alt="Foto de Filipe Gallo" />
+          <Image src={FilipePhoto} alt="Foto de Filipe Gallo" />
         </Container>
       </main>
     </React.Fragment>

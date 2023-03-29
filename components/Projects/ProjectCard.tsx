@@ -10,9 +10,8 @@ const ProjectCard = (project: IProject) => {
 
   function handleProject(event: React.MouseEvent) {
     if (event.currentTarget.parentElement) {
-      const projetoEscolhido =
-        event.currentTarget.parentElement.getAttribute("id");
-      if (projetoEscolhido) router.push(`projetos/${projetoEscolhido}`);
+      const projectId = event.currentTarget.parentElement.getAttribute("id");
+      if (projectId) router.push(`projetos/${projectId}`);
     }
   }
 
