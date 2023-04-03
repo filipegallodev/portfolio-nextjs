@@ -32,6 +32,19 @@
     "test": "https://www.jardimambiental.com/"
   },
   {
+    "name": "Zippia Jobs",
+    "id": "zippia-jobs",
+    "description": "Aplicação Web Full-Stack que exibe uma página fictícia de vagas com opções de filtro.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/zippia-jobs.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["Next.js", "TypeScript", "Node.js", "Express.js", "CSS"],
+    "github": "https://github.com/filipegallodev/zippia-jobs",
+    "test": "https://zippia-jobs-filipegallodev.vercel.app/test/jobs"
+  },
+  {
     "name": "NG.Cash Fictício",
     "id": "ng-cash",
     "description": "Aplicação Web Full-Stack fictícia do banco NG.Cash. Importante: Como o plano de hospedagem do Back-End é limitado, o uptime mensal é de apenas 500 horas, se o login/registro não funcionar é por conta disso.",
