@@ -45,9 +45,9 @@
     "test": "https://zippia-jobs-filipegallodev.vercel.app/test/jobs"
   },
   {
-    "name": "NG.Cash Fictício",
-    "id": "ng-cash",
-    "description": "Aplicação Web Full-Stack fictícia do banco NG.Cash. Importante: Como o plano de hospedagem do Back-End é limitado, o uptime mensal é de apenas 500 horas, se o login/registro não funcionar é por conta disso.",
+    "name": "Banco Digital [EM ATUALIZAÇÃO]",
+    "id": "banco-digital",
+    "description": "Aplicação Web Full-Stack fictícia de um banco digital. Note: Por estar em atualização, certas funcionalidades podem estar indisponíveis.",
     "imageUrl": {
       "src": "/assets/projetos-capas/ng-cash.webp",
       "width": 1908,
