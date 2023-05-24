@@ -122,6 +122,7 @@ const Logo = styled.span`
   gap: 0.5rem;
   font-size: 2rem;
   color: var(--specific-text-color);
+  cursor: default;
   & .dev-icon {
     width: 2.125rem;
     height: auto;
