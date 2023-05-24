@@ -4,9 +4,11 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import DevLogo from "../public/assets/img/dev.png";
 import styled from "styled-components";
-import changeTheme from "../helper/changeTheme";
 import Brightness4TwoToneIcon from "@mui/icons-material/Brightness4TwoTone";
 import Brightness5TwoToneIcon from "@mui/icons-material/Brightness5TwoTone";
+import { useAppDispatch } from "./hooks/useAppDispatch";
+import { setDarkTheme, setLightTheme } from "./store/reducers/theme";
+import { useAppSelector } from "./hooks/useAppSelector";
 
 const routes = [
   {
@@ -30,13 +32,29 @@ const routes = [
 const Header = () => {
   const router = useRouter();
   const routePathname = router.pathname;
-  const [theme, setTheme] = useState<string>("");
+  const { theme } = useAppSelector((state) => state.theme);
+  const dispatch = useAppDispatch();
+  const [themeIcon, setThemeIcon] = useState<JSX.Element | null>(null);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("user-theme");
-    if (savedTheme === "light") return setTheme(changeTheme("dark"));
-    if (savedTheme === "dark") return setTheme(changeTheme("light"));
-  }, []);
+    switch (theme) {
+      case "light":
+        return setThemeIcon(
+          <Brightness5TwoToneIcon
+            sx={{ color: "yellow" }}
+            fontSize="large"
+            onClick={() => dispatch(setDarkTheme())}
+          />
+        );
+      default:
+        return setThemeIcon(
+          <Brightness4TwoToneIcon
+            fontSize="large"
+            onClick={() => dispatch(setLightTheme())}
+          />
+        );
+    }
+  }, [theme]);
 
   return (
     <HeaderStyled>
@@ -61,20 +79,7 @@ const Header = () => {
             </NavList>
           </NavContainer>
         </LogoMenuContainer>
-        <ThemeContainer>
-          {theme === "dark" ? (
-            <Brightness4TwoToneIcon
-              fontSize="large"
-              onClick={() => setTheme(changeTheme("dark"))}
-            />
-          ) : (
-            <Brightness5TwoToneIcon
-              sx={{ color: "yellow" }}
-              fontSize="large"
-              onClick={() => setTheme(changeTheme("light"))}
-            />
-          )}
-        </ThemeContainer>
+        <ThemeContainer>{themeIcon}</ThemeContainer>
       </Container>
     </HeaderStyled>
   );
