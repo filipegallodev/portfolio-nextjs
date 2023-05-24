@@ -5,6 +5,7 @@ import AboutText from "../components/AboutText";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import TechnologiesContainer from "../components/Technologies/TechnologiesContainer";
+import Title from "../components/Title";
 
 const Sobre = () => {
   return (
@@ -16,7 +17,7 @@ const Sobre = () => {
       <Header />
       <main className="animeLeft">
         <Container>
-          <PageTitle>Conheça um pouco sobre mim</PageTitle>
+          <Title>Conheça um pouco sobre mim</Title>
           <SubTitle>Um breve resumo</SubTitle>
           <AboutText />
           <SubTitle>Tecnologias</SubTitle>
@@ -35,13 +36,6 @@ const Container = styled.section`
   @media (max-width: 1010px) {
     margin: 0 24px;
   }
-`;
-
-const PageTitle = styled.h1`
-  text-align: center;
-  color: var(--main-color);
-  font-size: 1.85rem;
-  margin: 48px 0;
 `;
 
 const SubTitle = styled.h2`

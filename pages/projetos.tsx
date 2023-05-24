@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ProjectContainer from "../components/Projects/ProjectContainer";
+import Title from "../components/Title";
 
 const Projetos = () => {
   return (
@@ -15,7 +16,7 @@ const Projetos = () => {
       <Header />
       <main className="animeLeft">
         <Container>
-          <PageTitle>Conheça alguns dos meus projetos</PageTitle>
+          <Title>Conheça alguns dos meus projetos</Title>
           <ProjectContainer />
         </Container>
       </main>
@@ -26,13 +27,6 @@ const Projetos = () => {
 
 const Container = styled.section`
   margin: 0 24px;
-`;
-
-const PageTitle = styled.h1`
-  text-align: center;
-  color: var(--main-color);
-  font-size: 1.85rem;
-  margin: 48px 0;
 `;
 
 export default Projetos;

@@ -5,6 +5,7 @@ import ContactForm from "../components/Form/ContactForm";
 import styled from "styled-components";
 import SocialMedia from "../components/SocialMedia";
 import Footer from "../components/Footer";
+import Title from "../components/Title";
 
 const Contato = () => {
   return (
@@ -17,7 +18,7 @@ const Contato = () => {
       <Header />
       <main className="animeLeft">
         <Container>
-          <PageTitle>Entre em contato comigo!</PageTitle>
+          <Title>Entre em contato comigo!</Title>
           <ContactForm />
           <SubTitle>Outros meios</SubTitle>
           <SocialMedia />
@@ -34,13 +35,6 @@ const Container = styled.section`
   @media (max-width: 810px) {
     margin: 0 24px;
   }
-`;
-
-const PageTitle = styled.h1`
-  text-align: center;
-  color: var(--main-color);
-  font-size: 1.85rem;
-  margin: 48px 0;
 `;
 
 const SubTitle = styled.h2`
