@@ -4,6 +4,16 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import Header from "../components/Header";
 import FilipePhoto from "../public/assets/img/foto-filipe.webp";
+import AboutText from "../components/AboutText";
+import TechnologiesContainer from "../components/Technologies/TechnologiesContainer";
+import SectionTitle from "../components/SectionTitle";
+import SubTitle from "../components/SubTitle";
+import ProjectContainer from "../components/Projects/ProjectContainer";
+import SocialMedia from "../components/SocialMedia";
+import ContactForm from "../components/Form/ContactForm";
+import Footer from "../components/Footer";
+import BackToTop from "../components/BackToTop";
+import Section from "../components/Section";
 
 export default function Home() {
   return (
@@ -14,10 +24,8 @@ export default function Home() {
           name="description"
           content="Site oficial do Desenvolvedor Front-End Filipe Gallo."
         />
-        <meta name="description" content="Página inicial." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
       <main className="animeLeft">
         <Container>
@@ -29,7 +37,26 @@ export default function Home() {
           </Info>
           <Image src={FilipePhoto} alt="Foto de Filipe Gallo" />
         </Container>
+        <Section>
+          <SectionTitle>Conheça um pouco sobre mim</SectionTitle>
+          <SubTitle>Um breve resumo</SubTitle>
+          <AboutText />
+          <SubTitle>Tecnologias</SubTitle>
+          <TechnologiesContainer />
+        </Section>
+        <Section>
+          <SectionTitle>Conheça alguns dos meus projetos</SectionTitle>
+          <ProjectContainer />
+        </Section>
+        <Section>
+          <SectionTitle>Entre em contato comigo!</SectionTitle>
+          <ContactForm />
+          <SubTitle>Outros meios</SubTitle>
+          <SocialMedia />
+        </Section>
+        <BackToTop />
       </main>
+      <Footer />
     </React.Fragment>
   );
 }
@@ -45,8 +72,8 @@ const PulseImage = keyframes`
   }
 `;
 
-const Container = styled.div`
-  margin-bottom: 96px;
+const Container = styled.section`
+  margin-bottom: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,8 +109,11 @@ const Info = styled.div`
 `;
 
 const MainTitle = styled.h1`
-  margin: 0;
+  margin: 0px;
+  margin-bottom: 16px;
   font-size: 4.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
   @media (max-width: 450px) {
     font-size: 3.5rem;
   }
@@ -97,5 +127,10 @@ const Headline = styled.span`
 `;
 
 const Strong = styled.strong`
-  color: var(--main-color);
+  background: var(--main-text-color);
+  border-radius: 6px;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  color: #22f;
+  font-weight: 600;
 `;

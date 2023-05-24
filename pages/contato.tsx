@@ -2,7 +2,6 @@ import Head from "next/head";
 import React from "react";
 import Header from "../components/Header";
 import ContactForm from "../components/Form/ContactForm";
-import styled from "styled-components";
 import SocialMedia from "../components/SocialMedia";
 import Footer from "../components/Footer";
 import Title from "../components/SectionTitle";
@@ -17,7 +16,6 @@ const Contato = () => {
         <title>Contato | Filipe Gallo | Desenvolvedor Front-End</title>
         <meta name="description" content="Entre em contato comigo." />
       </Head>
-
       <Header />
       <main className="animeLeft">
         <Section>
