@@ -39,26 +39,28 @@ const Header = () => {
   }, []);
 
   return (
-    <header>
+    <HeaderStyled>
       <Container>
-        <Logo>
-          Filipe Gallo
-          <Image src={DevLogo} alt="Logo Dev" className="dev-icon" />
-        </Logo>
-        <NavContainer>
-          <NavList>
-            {routes.map(({ name, route }) => (
-              <NavItem key={name}>
-                <Link
-                  href={route}
-                  className={routePathname === `${route}` ? "active" : ""}
-                >
-                  {name}
-                </Link>
-              </NavItem>
-            ))}
-          </NavList>
-        </NavContainer>
+        <LogoMenuContainer>
+          <Logo>
+            Filipe Gallo
+            <Image src={DevLogo} alt="Logo Dev" className="dev-icon" />
+          </Logo>
+          <NavContainer>
+            <NavList>
+              {routes.map(({ name, route }) => (
+                <NavItem key={name}>
+                  <Link
+                    href={route}
+                    className={routePathname === `${route}` ? "active" : ""}
+                  >
+                    {name}
+                  </Link>
+                </NavItem>
+              ))}
+            </NavList>
+          </NavContainer>
+        </LogoMenuContainer>
         <ThemeContainer>
           {theme === "dark" ? (
             <Brightness4TwoToneIcon
@@ -74,20 +76,40 @@ const Header = () => {
           )}
         </ThemeContainer>
       </Container>
-    </header>
+    </HeaderStyled>
   );
 };
 
+const HeaderStyled = styled.header`
+  background: #000;
+  box-shadow: 0 0 10px #000;
+`;
+
 const Container = styled.div`
+  max-width: 1200px;
+  min-height: 120px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  background: #000;
-  padding: 32px;
-  box-shadow: 0 0 10px #000;
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
+    margin: 0 24px;
     gap: 32px;
+  }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 24px;
+  }
+`;
+
+const LogoMenuContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  @media (max-width: 800px) {
+    flex-direction: column;
   }
 `;
 
@@ -95,21 +117,23 @@ const Logo = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
+  font-weight: 500;
   gap: 0.5rem;
   font-size: 2rem;
   color: var(--specific-text-color);
   & .dev-icon {
-    width: 2rem;
+    width: 2.125rem;
     height: auto;
   }
-  @media (max-width: 1100px) {
+  @media (max-width: 800px) {
     margin: 32px 0;
     width: 100%;
   }
 `;
 
 const NavContainer = styled.nav`
-  @media (max-width: 1100px) {
+  @media (max-width: 800px) {
     width: 100%;
   }
 `;
@@ -119,7 +143,7 @@ const NavList = styled.ul`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 32px;
   margin: 0;
   padding: 0;
 `;
@@ -127,9 +151,9 @@ const NavList = styled.ul`
 const NavItem = styled.li`
   list-style: none;
   font-size: 1.35rem;
-  font-weight: 500;
-  color: #bbb;
-  transition: 0.3s;
+  text-transform: uppercase;
+  color: #ddd;
+  transition: 0.1s;
   &:hover {
     color: var(--secundary-color);
   }
