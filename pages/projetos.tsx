@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import ProjectContainer from "../components/Projects/ProjectContainer";
 import Title from "../components/SectionTitle";
 import BackToTop from "../components/BackToTop";
+import Section from "../components/Section";
 
 const Projetos = () => {
   return (
@@ -16,19 +17,15 @@ const Projetos = () => {
       </Head>
       <Header />
       <main className="animeLeft">
-        <Container>
+        <Section>
           <Title>Conheça alguns dos meus projetos</Title>
           <ProjectContainer />
-        </Container>
+        </Section>
         <BackToTop />
       </main>
       <Footer />
     </React.Fragment>
   );
 };
-
-const Container = styled.section`
-  margin: 0 24px;
-`;
 
 export default Projetos;
