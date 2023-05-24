@@ -1,9 +1,6 @@
 export default function changeTheme(theme: string) {
   const docStyle = document.documentElement.style;
-  const selectedTheme = {
-    name: "",
-    imageUrl: "",
-  };
+  let selectedTheme: string = "";
 
   if (theme === "light") {
     docStyle.setProperty("--main-text-color", "#f5f5f5");
@@ -11,8 +8,7 @@ export default function changeTheme(theme: string) {
     docStyle.setProperty("--card-text-color", "#f5f5f5");
     docStyle.setProperty("--card-background-color", "#252525");
     docStyle.setProperty("--form-border", "#dc1457");
-    selectedTheme.name = "dark";
-    selectedTheme.imageUrl = "/assets/themes-icons/dark.png";
+    selectedTheme = "dark";
   }
 
   if (theme === "dark") {
@@ -21,10 +17,9 @@ export default function changeTheme(theme: string) {
     docStyle.setProperty("--card-text-color", "#222");
     docStyle.setProperty("--card-background-color", "#eee");
     docStyle.setProperty("--form-border", "#111");
-    selectedTheme.name = "light";
-    selectedTheme.imageUrl = "/assets/themes-icons/light.png";
+    selectedTheme = "light";
   }
 
-  localStorage.setItem("user-theme", selectedTheme.name);
+  localStorage.setItem("user-theme", selectedTheme);
   return selectedTheme;
 }

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import DevLogo from "../public/assets/img/dev.png";
 import styled from "styled-components";
 import changeTheme from "../helper/changeTheme";
+import Brightness4TwoToneIcon from "@mui/icons-material/Brightness4TwoTone";
+import Brightness5TwoToneIcon from "@mui/icons-material/Brightness5TwoTone";
 
 const routes = [
   {
@@ -27,22 +29,14 @@ const routes = [
 
 const Header = () => {
   const router = useRouter();
-  const currentRoute = router.pathname;
-  const [theme, setTheme] = React.useState({
-    name: "",
-    imageUrl: "",
-  });
+  const routePathname = router.pathname;
+  const [theme, setTheme] = useState<string>("");
 
-  React.useEffect(() => {
+  useEffect(() => {
     const savedTheme = localStorage.getItem("user-theme");
-    if (savedTheme === "light") return setTheme({ ...changeTheme("dark") });
-    if (savedTheme === "dark") return setTheme({ ...changeTheme("light") });
+    if (savedTheme === "light") return setTheme(changeTheme("dark"));
+    if (savedTheme === "dark") return setTheme(changeTheme("light"));
   }, []);
-
-  function handleChangeTheme() {
-    if (theme.name) return setTheme({ ...changeTheme(theme.name) });
-    return setTheme({ ...changeTheme("dark") });
-  }
 
   return (
     <header>
@@ -57,7 +51,7 @@ const Header = () => {
               <NavItem key={name}>
                 <Link
                   href={route}
-                  className={currentRoute === `${route}` ? "active" : ""}
+                  className={routePathname === `${route}` ? "active" : ""}
                 >
                   {name}
                 </Link>
@@ -66,15 +60,18 @@ const Header = () => {
           </NavList>
         </NavContainer>
         <ThemeContainer>
-          <Image
-            onClick={handleChangeTheme}
-            src={
-              theme.imageUrl ? theme.imageUrl : "/assets/themes-icons/dark.png"
-            }
-            alt="Tema"
-            width={48}
-            height={48}
-          />
+          {theme === "dark" ? (
+            <Brightness4TwoToneIcon
+              fontSize="large"
+              onClick={() => setTheme(changeTheme("dark"))}
+            />
+          ) : (
+            <Brightness5TwoToneIcon
+              sx={{ color: "yellow" }}
+              fontSize="large"
+              onClick={() => setTheme(changeTheme("light"))}
+            />
+          )}
         </ThemeContainer>
       </Container>
     </header>
@@ -139,12 +136,22 @@ const NavItem = styled.li`
   & .active {
     color: var(--secundary-color);
   }
+  @media (max-width: 500px) {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 4px 4px 4px 0px;
+  }
 `;
 
 const ThemeContainer = styled.div`
-  & img {
+  & svg {
+    opacity: 0.9;
+    border-radius: 50%;
+    transition: 0.1s;
     cursor: pointer;
-    width: 100%;
+    &:hover {
+      opacity: 1;
+    }
   }
 `;
 
