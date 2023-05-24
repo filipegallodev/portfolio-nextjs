@@ -54,7 +54,7 @@ const Header = () => {
           />
         );
     }
-  }, [theme]);
+  }, [theme, dispatch]);
 
   return (
     <HeaderStyled>
