@@ -136,11 +136,6 @@ const NavItem = styled.li`
   & .active {
     color: var(--secundary-color);
   }
-  @media (max-width: 500px) {
-    font-size: 1.25rem;
-    font-weight: 400;
-    padding: 4px 4px 4px 0px;
-  }
 `;
 
 const ThemeContainer = styled.div`
