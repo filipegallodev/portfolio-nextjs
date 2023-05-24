@@ -5,7 +5,8 @@ import AboutText from "../components/AboutText";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import TechnologiesContainer from "../components/Technologies/TechnologiesContainer";
-import Title from "../components/Title";
+import Title from "../components/SectionTitle";
+import BackToTop from "../components/BackToTop";
 
 const Sobre = () => {
   return (
@@ -23,6 +24,7 @@ const Sobre = () => {
           <SubTitle>Tecnologias</SubTitle>
           <TechnologiesContainer />
         </Container>
+        <BackToTop />
       </main>
       <Footer />
     </React.Fragment>

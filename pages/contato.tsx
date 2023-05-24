@@ -5,7 +5,8 @@ import ContactForm from "../components/Form/ContactForm";
 import styled from "styled-components";
 import SocialMedia from "../components/SocialMedia";
 import Footer from "../components/Footer";
-import Title from "../components/Title";
+import Title from "../components/SectionTitle";
+import BackToTop from "../components/BackToTop";
 
 const Contato = () => {
   return (
@@ -23,6 +24,7 @@ const Contato = () => {
           <SubTitle>Outros meios</SubTitle>
           <SocialMedia />
         </Container>
+        <BackToTop />
       </main>
       <Footer />
     </React.Fragment>

@@ -4,7 +4,8 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ProjectContainer from "../components/Projects/ProjectContainer";
-import Title from "../components/Title";
+import Title from "../components/SectionTitle";
+import BackToTop from "../components/BackToTop";
 
 const Projetos = () => {
   return (
@@ -19,6 +20,7 @@ const Projetos = () => {
           <Title>Conheça alguns dos meus projetos</Title>
           <ProjectContainer />
         </Container>
+        <BackToTop />
       </main>
       <Footer />
     </React.Fragment>
