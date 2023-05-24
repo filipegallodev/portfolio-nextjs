@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const Title = ({ children }: { children: string }) => {
+const SectionTitle = ({ children }: { children: string }) => {
   return <TitleStyled>{children}</TitleStyled>;
 };
 
-const TitleStyled = styled.h1`
+const TitleStyled = styled.h2`
   text-align: center;
   color: var(--main-color);
   font-size: 1.85rem;
   margin: 48px 0;
 `;
 
-export default Title;
+export default SectionTitle;
