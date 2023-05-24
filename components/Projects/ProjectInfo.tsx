@@ -63,7 +63,7 @@ const Back = styled.button`
   color: #fff;
   font-size: 1.35rem;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.1s;
   &:hover {
     background-color: #ad003a;
   }

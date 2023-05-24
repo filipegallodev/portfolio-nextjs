@@ -38,7 +38,7 @@ const Card = styled.li`
   border-radius: 8px;
   box-shadow: 0 0 4px rgba(220, 20, 87, 0.5);
   overflow: hidden;
-  transition: 0.2s;
+  transition: 0.1s;
   &:hover {
     background-color: rgba(220, 20, 87, 0.5);
     box-shadow: 0 0 8px rgba(220, 20, 87, 0.5);
@@ -54,7 +54,7 @@ const ImageContainer = styled.div`
     width: 100%;
     height: auto;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.1s;
     &:hover {
       opacity: 0.75;
     }
