@@ -8,6 +8,7 @@ const SubTitle = ({ children }: { children: string }) => {
 const TitleStyled = styled.h3`
   font-size: 1.65rem;
   color: var(--main-color);
+  text-transform: uppercase;
   margin: 40px auto;
 `;
 
