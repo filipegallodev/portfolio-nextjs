@@ -32,7 +32,7 @@ export default function Home() {
           <Info>
             <MainTitle>Filipe Gallo</MainTitle>
             <Headline>
-              Desenvolvedor <Strong>Front-End</Strong>
+              <span>Desenvolvedor</span> <Strong>Front-End</Strong>
             </Headline>
           </Info>
           <Image src={FilipePhoto} alt="Foto de Filipe Gallo" />
@@ -73,6 +73,7 @@ const PulseImage = keyframes`
 `;
 
 const Container = styled.section`
+  min-height: 90vh;
   margin-bottom: 120px;
   display: flex;
   align-items: center;
@@ -121,8 +122,14 @@ const MainTitle = styled.h1`
 
 const Headline = styled.span`
   font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
   @media (max-width: 450px) {
     font-size: 2rem;
+    gap: 6px;
   }
 `;
 
