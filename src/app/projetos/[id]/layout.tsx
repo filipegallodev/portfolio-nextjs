@@ -9,7 +9,7 @@ interface IProps {
 export async function generateMetadata({ params }: IProps): Promise<Metadata> {
   const id = params.id;
 
-  const project = await fetch(`http://localhost:3000/projects.json`)
+  const project = await fetch(`https://filipegallo.dev/projects.json`)
     .then((res) => res.json())
     .then((data) => data.find((data: IProject) => data.id === id));
 
