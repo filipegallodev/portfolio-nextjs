@@ -1,17 +1,13 @@
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 
 interface IProps {
   params: {
     id: string;
   };
-  searchParams: {
-    [key: string]: string | string[] | undefined;
-  };
 }
 
 export async function generateMetadata(
-  { params, searchParams }: IProps,
-  parent?: ResolvingMetadata
+  { params}: IProps,
 ): Promise<Metadata> {
   const id = params.id;
 
