@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import { Metadata } from "next";
 import { Providers } from "@/store/provider";
 import ReduxThemeProvider from "@/components/ReduxThemeProvider";
+import GlobalStyle from "@/styles/GlobalStyle";
 
 export const metadata: Metadata = {
   title: "Filipe Gallo | Desenvolvedor Front-End",
@@ -15,14 +16,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br">
-      <body>
-        <Providers>
-          <ReduxThemeProvider>
-            <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-          </ReduxThemeProvider>
-        </Providers>
-      </body>
-    </html>
+    <Providers>
+      <StyledComponentsRegistry>
+        <ReduxThemeProvider>
+          <GlobalStyle />
+          <html lang="pt-br">
+            <body>{children}</body>
+          </html>
+        </ReduxThemeProvider>
+      </StyledComponentsRegistry>
+    </Providers>
   );
 }
