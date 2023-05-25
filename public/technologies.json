@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Next.js",
+    "imageUrl": {
+      "src": "/assets/logos/nextjs-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "React",
+    "imageUrl": {
+      "src": "/assets/logos/react-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "JavaScript",
+    "imageUrl": {
+      "src": "/assets/logos/javascript-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "TypeScript",
+    "imageUrl": {
+      "src": "/assets/logos/typescript-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Redux",
+    "imageUrl": {
+      "src": "/assets/logos/redux-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Styled-components",
+    "imageUrl": {
+      "src": "/assets/logos/styled-components-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+
+  {
+    "name": "Sass",
+    "imageUrl": {
+      "src": "/assets/logos/sass-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Material UI",
+    "imageUrl": {
+      "src": "/assets/logos/materialui-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Bootstrap 5",
+    "imageUrl": {
+      "src": "/assets/logos/bootstrap-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Git",
+    "imageUrl": {
+      "src": "/assets/logos/git-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "HTML5",
+    "imageUrl": {
+      "src": "/assets/logos/html-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "CSS3",
+    "imageUrl": {
+      "src": "/assets/logos/css-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  }
+]

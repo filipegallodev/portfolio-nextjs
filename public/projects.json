@@ -1,0 +1,214 @@
+[
+  {
+    "name": "Next E-commerce",
+    "id": "next-ecommerce",
+    "description": "Um E-commerce fictício com o objetivo de treinar as hard skills com um projeto real utilizando tecnologias modernas.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/next-ecommerce.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Redux",
+      "Styled-components",
+      "Material-UI"
+    ],
+    "github": "https://github.com/filipegallodev/next-ecommerce",
+    "test": "https://next-ecommerce-fg.vercel.app/"
+  },
+  {
+    "name": "Jardim Consultoria Ambiental",
+    "id": "jardim-ambiental",
+    "description": "Projeto profissional desenvolvido para a empresa Jardim Consultoria Ambiental.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/jardim-ambiental.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["Next.js", "TypeScript", "Styled-components"],
+    "github": null,
+    "test": "https://www.jardimambiental.com/"
+  },
+  {
+    "name": "Zippia Jobs",
+    "id": "zippia-jobs",
+    "description": "Aplicação Web Full-Stack que exibe uma página fictícia de vagas com opções de filtro.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/zippia-jobs.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["Next.js", "TypeScript", "Node.js", "Express.js", "CSS"],
+    "github": "https://github.com/filipegallodev/zippia-jobs",
+    "test": "https://zippia-jobs-filipegallodev.vercel.app/test/jobs"
+  },
+  {
+    "name": "Banco Digital [EM ATUALIZAÇÃO]",
+    "id": "banco-digital",
+    "description": "Aplicação Web Full-Stack fictícia de um banco digital. Note: Por estar em atualização, certas funcionalidades podem estar indisponíveis.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/ng-cash.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "CSS"
+    ],
+    "github": "https://github.com/filipegallodev/ng-cash-app",
+    "test": "https://ngcash-app.vercel.app/"
+  },
+  {
+    "name": "Mundo dos Filmes",
+    "id": "mundo-dos-filmes",
+    "description": "Aplicação Web que exibe os filmes mais populares no momento, possui página com detalhes de cada filme, permite favoritar os filmes preferidos e a consulta de filmes.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/mundo-dos-filmes.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "CSS",
+      "Fetch API",
+      "TMDB API"
+    ],
+    "github": "https://github.com/filipegallodev/mundo-dos-filmes",
+    "test": "https://mundo-dos-filmes.vercel.app/"
+  },
+  {
+    "name": "Dogs",
+    "id": "dogs",
+    "description": "Projeto desenvolvido nos cursos de React e Redux da Origamid.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/dogs.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Redux",
+      "Fetch API",
+      "Victory",
+      "CSS"
+    ],
+    "github": "https://github.com/filipegallodev/redux-origamid/tree/main/projeto-redux",
+    "test": "https://redux-origamid.vercel.app/"
+  },
+  {
+    "name": "Sorteador",
+    "id": "sorteador",
+    "description": "Projeto desenvolvido utilizando TDD no curso de React com Jest.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/sorteador.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Jest",
+      "React Testing Library",
+      "TDD",
+      "CSS"
+    ],
+    "github": "https://github.com/filipegallodev/jest-react-alura/tree/main/sorteador-de-amigo-secreto",
+    "test": "https://jest-react-alura.vercel.app/"
+  },
+  {
+    "name": "Antigo site pessoal com Portfólio",
+    "id": "portfolio-anterior",
+    "description": "Aplicação Web do meu antigo site pessoal com portfólio desenvolvido utilizando JavaScript.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/portfolio-anterior.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/filipegallodev/portfolio",
+    "test": "https://filipegallodev.github.io/portfolio/"
+  },
+  {
+    "name": "Animais Fantásticos",
+    "id": "animais-fantasticos",
+    "description": "Projeto desenvolvido no curso de JavaScript da Origamid.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/animais-fantasticos.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "ESLint",
+      "Babel",
+      "Webpack",
+      "Fetch API"
+    ],
+    "github": "https://github.com/filipegallodev/javascript-origamid/tree/main/projeto-final/animais-fantasticos",
+    "test": "https://animais-fantasticos-origamid-fg.vercel.app/"
+  },
+  {
+    "name": "Decodificador",
+    "id": "decodificador",
+    "description": "Aplicação Web para criptografar e descriptografar textos.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/decodificador.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS", "JavaScript", "RegExp"],
+    "github": "https://github.com/filipegallodev/alura-challenge-criptografia",
+    "test": "https://filipegallodev.github.io/alura-challenge-criptografia/"
+  },
+  {
+    "name": "App de Lista de Notas",
+    "id": "lista-de-notas",
+    "description": "Aplicação Web para escrever e salvar notas.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/lista-de-notas.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/filipegallodev/note-list",
+    "test": "https://filipegallodev.github.io/note-list/"
+  },
+  {
+    "name": "Encurtador de Links",
+    "id": "encurtador-de-links",
+    "description": "Aplicação Web para encurtar links muito grandes.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/encurtador-de-links.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS", "JavaScript", "Fetch API"],
+    "github": "https://github.com/filipegallodev/imageUrl-shortner",
+    "test": "https://encurtador-de-links-fg.vercel.app/"
+  },
+  {
+    "name": "Optimus Tech - Vagas",
+    "id": "optimus-tech",
+    "description": "Página estática de vagas de uma empresa fictícia.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/optimus-tech.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["HTML", "CSS"],
+    "github": "https://github.com/filipegallodev/optimus-tech-vagas",
+    "test": "https://filipegallodev.github.io/optimus-tech-vagas/"
+  }
+]

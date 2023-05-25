@@ -1,95 +1,136 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+
+import Image from "next/image";
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import FilipePhoto from "../../public/assets/img/foto-filipe.webp";
+import AboutText from "@/components/AboutText";
+import TechnologiesContainer from "@/components/Technologies/TechnologiesContainer";
+import SectionTitle from "@/components/SectionTitle";
+import SubTitle from "@/components/SubTitle";
+import ProjectContainer from "@/components/Projects/ProjectContainer";
+import SocialMedia from "@/components/SocialMedia";
+import ContactForm from "@/components/Form/ContactForm";
+import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
+import Section from "@/components/Section";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    <React.Fragment>
+      <Header />
+      <main className="animeLeft">
+        <Container>
+          <Info>
+            <MainTitle>Filipe Gallo</MainTitle>
+            <Headline>
+              <span>Desenvolvedor</span> <Strong>Front-End</Strong>
+            </Headline>
+          </Info>
+          <Image src={FilipePhoto} alt="Foto de Filipe Gallo" />
+        </Container>
+        <Section>
+          <SectionTitle>Conheça um pouco sobre mim</SectionTitle>
+          <SubTitle>Um breve resumo</SubTitle>
+          <AboutText />
+          <SubTitle>Tecnologias</SubTitle>
+          <TechnologiesContainer />
+        </Section>
+        <Section>
+          <SectionTitle>Conheça alguns dos meus projetos</SectionTitle>
+          <ProjectContainer />
+        </Section>
+        <Section>
+          <SectionTitle>Entre em contato comigo!</SectionTitle>
+          <ContactForm />
+          <SubTitle>Outros meios</SubTitle>
+          <SocialMedia />
+        </Section>
+        <BackToTop />
+      </main>
+      <Footer />
+    </React.Fragment>
+  );
 }
+
+const PulseImage = keyframes`
+  from {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0.35rem var(--main-color));
+  }
+  to {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 0.75rem var(--main-color));
+  }
+`;
+
+const Container = styled.section`
+  min-height: 90vh;
+  margin-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+  & img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 100%;
+    filter: drop-shadow(0 0 0.75rem var(--main-color));
+    animation: ${PulseImage} 2.5s infinite alternate;
+  }
+  @media (max-width: 1350px) {
+    gap: 0;
+    & img {
+      margin-bottom: 96px;
+    }
+  }
+  @media (max-width: 510px) {
+    & img {
+      max-width: 90%;
+    }
+  }
+`;
+
+const Info = styled.div`
+  @media (max-width: 1350px) {
+    width: 100%;
+    text-align: center;
+    margin: 64px 12px 32px 12px;
+  }
+`;
+
+const MainTitle = styled.h1`
+  margin: 0px;
+  margin-bottom: 16px;
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  @media (max-width: 450px) {
+    font-size: 3.5rem;
+  }
+`;
+
+const Headline = styled.span`
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  @media (max-width: 450px) {
+    font-size: 2rem;
+    gap: 6px;
+  }
+`;
+
+const Strong = styled.strong`
+  background: var(--main-text-color);
+  border-radius: 6px;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  color: #22f;
+  font-weight: 600;
+`;
