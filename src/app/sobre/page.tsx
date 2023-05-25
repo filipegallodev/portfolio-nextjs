@@ -1,6 +1,5 @@
 "use client";
 
-import Head from "next/head";
 import React from "react";
 import AboutText from "@/components/AboutText";
 import Footer from "@/components/Footer";
@@ -14,10 +13,6 @@ import Section from "@/components/Section";
 export default function Sobre() {
   return (
     <React.Fragment>
-      <Head>
-        <title>Sobre | Filipe Gallo | Desenvolvedor Front-End</title>
-        <meta name="description" content="Sobre mim." />
-      </Head>
       <Header />
       <main className="animeLeft">
         <Section>

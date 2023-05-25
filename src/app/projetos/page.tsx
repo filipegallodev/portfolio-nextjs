@@ -1,6 +1,5 @@
 "use client";
 
-import Head from "next/head";
 import React from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -12,10 +11,6 @@ import Section from "@/components/Section";
 export default function Projetos() {
   return (
     <React.Fragment>
-      <Head>
-        <title>Projetos | Filipe Gallo | Desenvolvedor Front-End</title>
-        <meta name="description" content="Projetos desenvolvidos por mim." />
-      </Head>
       <Header />
       <main className="animeLeft">
         <Section>

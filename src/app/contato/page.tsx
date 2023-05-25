@@ -1,6 +1,5 @@
 "use client";
 
-import Head from "next/head";
 import React from "react";
 import Header from "@/components/Header";
 import ContactForm from "@/components/Form/ContactForm";
@@ -14,10 +13,6 @@ import Section from "@/components/Section";
 export default function Contato() {
   return (
     <React.Fragment>
-      <Head>
-        <title>Contato | Filipe Gallo | Desenvolvedor Front-End</title>
-        <meta name="description" content="Entre em contato comigo." />
-      </Head>
       <Header />
       <main className="animeLeft">
         <Section>

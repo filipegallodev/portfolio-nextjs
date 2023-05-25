@@ -1,6 +1,5 @@
 "use client";
 
-import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -12,7 +11,7 @@ export default function Projeto() {
   const [project, setProject] = useState<IProject>();
 
   useEffect(() => {
-    fetch("/projects.json")
+    fetch("https://filipegallo.dev/projects.json")
       .then((res) => res.json())
       .then((data) =>
         setProject(data.find((data: IProject) => data.id === projectId))
@@ -21,10 +20,6 @@ export default function Projeto() {
 
   return (
     <React.Fragment>
-      <Head>
-        {project && <title>{project.name} | Filipe Gallo</title>}
-        <meta name="description" content="Projetos desenvolvidos por mim." />
-      </Head>
       <Header />
       <main className="animeLeft">
         {project && <ProjectInfo {...project} />}
