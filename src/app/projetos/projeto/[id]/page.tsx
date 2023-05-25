@@ -7,7 +7,7 @@ import ProjectInfo from "@/components/Projects/ProjectInfo";
 import { usePathname } from "next/navigation";
 
 export default function Projeto() {
-  const projectId = usePathname().split("/")[2];
+  const projectId = usePathname().split("/")[3];
   const [project, setProject] = useState<IProject>();
 
   useEffect(() => {

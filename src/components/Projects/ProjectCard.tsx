@@ -10,7 +10,7 @@ const ProjectCard = (project: IProject) => {
 
   return (
     <Card className="animeLeft" id={id}>
-      <ImageContainer onClick={() => router.push(`projetos/${id}`)}>
+      <ImageContainer onClick={() => router.push(`projetos/projeto/${id}`)}>
         {imageLoading && <ImageSkeleton />}
         <Image
           src={imageUrl}
