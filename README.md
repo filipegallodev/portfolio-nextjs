@@ -1,4 +1,5 @@
 # 🌎 Site com portfólio
+<<<<<<< HEAD
 
 ![Capa](https://i.imgur.com/taq3N92.png)
 
@@ -8,6 +9,14 @@ Meu site com a exposição de projetos desenvolvidos por mim!
 
 ## 📰 Conteúdo
 
+=======
+![Capa](https://i.imgur.com/taq3N92.png)
+
+## 🎯 Objetivo
+Meu site com a exposição de projetos desenvolvidos por mim!
+
+## 📰 Conteúdo
+>>>>>>> beb0f22f399bf76a3e101628f76cd31976a0c308
 - Home
 - Sobre
   - Descrição
