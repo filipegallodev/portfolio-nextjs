@@ -8,16 +8,9 @@ const ProjectCard = (project: IProject) => {
   const router = useRouter();
   const [imageLoading, setImageLoading] = useState<boolean>(true);
 
-  function handleProject(event: React.MouseEvent) {
-    if (event.currentTarget.parentElement) {
-      const projectId = event.currentTarget.parentElement.getAttribute("id");
-      if (projectId) router.push(`projetos/${projectId}`);
-    }
-  }
-
   return (
     <Card className="animeLeft" id={id}>
-      <ImageContainer onClick={handleProject}>
+      <ImageContainer onClick={() => router.push(`projetos/${id}`)}>
         {imageLoading && <ImageSkeleton />}
         <Image
           src={imageUrl}

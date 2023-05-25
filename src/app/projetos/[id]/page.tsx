@@ -11,7 +11,7 @@ export default function Projeto() {
   const [project, setProject] = useState<IProject>();
 
   useEffect(() => {
-    fetch("https://filipegallo.dev/projects.json")
+    fetch("/projects.json")
       .then((res) => res.json())
       .then((data) =>
         setProject(data.find((data: IProject) => data.id === projectId))

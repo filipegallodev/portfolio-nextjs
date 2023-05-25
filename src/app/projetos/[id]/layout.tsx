@@ -1,12 +1,18 @@
-import { Metadata } from "next";
+import { Metadata, ResolvingMetadata } from "next";
 
 interface IProps {
   params: {
     id: string;
   };
+  searchParams: {
+    [key: string]: string | string[] | undefined;
+  };
 }
 
-export async function generateMetadata({ params }: IProps): Promise<Metadata> {
+export async function generateMetadata(
+  { params, searchParams }: IProps,
+  parent?: ResolvingMetadata
+): Promise<Metadata> {
   const id = params.id;
 
   const project = await fetch(`https://filipegallo.dev/projects.json`)

@@ -6,7 +6,7 @@ const ProjectContainer = () => {
   const [listaProjetos, setListaProjetos] = React.useState([]);
 
   React.useEffect(() => {
-    fetch("./projects.json")
+    fetch("/projects.json")
       .then((res) => res.json())
       .then((data) => setListaProjetos(data));
   }, []);
