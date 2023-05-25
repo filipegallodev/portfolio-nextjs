@@ -6,9 +6,7 @@ interface IProps {
   };
 }
 
-export async function generateMetadata(
-  { params}: IProps,
-): Promise<Metadata> {
+export async function generateMetadata({ params }: IProps): Promise<Metadata> {
   const id = params.id;
 
   const project = await fetch(`https://filipegallo.dev/projects.json`)
