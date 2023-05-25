@@ -1,24 +1,31 @@
-"use client";
-
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import FilipePhoto from "../../public/assets/img/foto-filipe.webp";
-import AboutText from "@/components/AboutText";
-import TechnologiesContainer from "@/components/Technologies/TechnologiesContainer";
-import SectionTitle from "@/components/SectionTitle";
-import SubTitle from "@/components/SubTitle";
-import ProjectContainer from "@/components/Projects/ProjectContainer";
-import SocialMedia from "@/components/SocialMedia";
-import ContactForm from "@/components/Form/ContactForm";
-import Footer from "@/components/Footer";
-import BackToTop from "@/components/BackToTop";
-import Section from "@/components/Section";
-import Header from "@/components/Header";
+import Header from "../components/Header";
+import FilipePhoto from "../public/assets/img/foto-filipe.webp";
+import AboutText from "../components/AboutText";
+import TechnologiesContainer from "../components/Technologies/TechnologiesContainer";
+import SectionTitle from "../components/SectionTitle";
+import SubTitle from "../components/SubTitle";
+import ProjectContainer from "../components/Projects/ProjectContainer";
+import SocialMedia from "../components/SocialMedia";
+import ContactForm from "../components/Form/ContactForm";
+import Footer from "../components/Footer";
+import BackToTop from "../components/BackToTop";
+import Section from "../components/Section";
 
 export default function Home() {
   return (
     <React.Fragment>
+      <Head>
+        <title>Filipe Gallo | Desenvolvedor Front-End</title>
+        <meta
+          name="description"
+          content="Site oficial do Desenvolvedor Front-End Filipe Gallo."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <main className="animeLeft">
         <Container>

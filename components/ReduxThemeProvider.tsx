@@ -1,9 +1,9 @@
 "use client";
 
-import { useAppSelector } from "@/store/hooks/useAppSelector";
-import DarkTheme from "@/styles/DarkTheme";
-import LightTheme from "@/styles/LightTheme";
+import DarkTheme from "../styles/DarkTheme";
+import LightTheme from "../styles/LightTheme";
 import { ThemeProvider } from "styled-components";
+import { useAppSelector } from "./hooks/useAppSelector";
 
 export default function ReduxThemeProvider({
   children,

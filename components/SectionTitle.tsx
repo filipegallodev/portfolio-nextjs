@@ -7,7 +7,7 @@ const SectionTitle = ({ children }: { children: string }) => {
 
 const TitleStyled = styled.h2`
   text-align: center;
-  color: ${(props) => props.theme.color.title};
+  color: var(--main-color);
   text-transform: uppercase;
   font-size: 1.85rem;
   margin: 48px 0;

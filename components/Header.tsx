@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import DevLogo from "../../public/assets/img/dev.png";
+import { useRouter } from "next/router";
+import DevLogo from "../public/assets/img/dev.png";
 import styled from "styled-components";
 import Brightness4TwoToneIcon from "@mui/icons-material/Brightness4TwoTone";
 import Brightness5TwoToneIcon from "@mui/icons-material/Brightness5TwoTone";
-import { useAppDispatch } from "@/store/hooks/useAppDispatch";
-import { setDarkTheme, setLightTheme } from "@/store/reducers/theme";
-import { useAppSelector } from "@/store/hooks/useAppSelector";
-import { usePathname } from "next/navigation";
+import { useAppDispatch } from "./hooks/useAppDispatch";
+import { setDarkTheme, setLightTheme } from "../store/reducers/theme";
+import { useAppSelector } from "./hooks/useAppSelector";
 
 const routes = [
   {
@@ -30,15 +30,11 @@ const routes = [
 ];
 
 const Header = () => {
-  const routePathname = usePathname();
+  const router = useRouter();
+  const routePathname = router.pathname;
   const { theme } = useAppSelector((state) => state.theme);
   const dispatch = useAppDispatch();
-  const [themeIcon, setThemeIcon] = useState<JSX.Element>(
-    <Brightness4TwoToneIcon
-      fontSize="large"
-      onClick={() => dispatch(setLightTheme())}
-    />
-  );
+  const [themeIcon, setThemeIcon] = useState<JSX.Element | null>(null);
 
   useEffect(() => {
     switch (theme) {

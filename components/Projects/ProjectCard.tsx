@@ -1,24 +1,30 @@
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 const ProjectCard = (project: IProject) => {
   const { id, name, imageUrl } = project;
+  const router = useRouter();
   const [imageLoading, setImageLoading] = useState<boolean>(true);
+
+  function handleProject(event: React.MouseEvent) {
+    if (event.currentTarget.parentElement) {
+      const projectId = event.currentTarget.parentElement.getAttribute("id");
+      if (projectId) router.push(`projetos/${projectId}`);
+    }
+  }
 
   return (
     <Card className="animeLeft" id={id}>
-      <Link href={`projetos/${id}`}>
-        <ImageContainer>
-          {imageLoading && <ImageSkeleton />}
-          <Image
-            src={imageUrl}
-            alt={name}
-            onLoad={() => setImageLoading(false)}
-          />
-        </ImageContainer>
-      </Link>
+      <ImageContainer onClick={handleProject}>
+        {imageLoading && <ImageSkeleton />}
+        <Image
+          src={imageUrl}
+          alt={name}
+          onLoad={() => setImageLoading(false)}
+        />
+      </ImageContainer>
     </Card>
   );
 };

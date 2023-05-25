@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import linkedinLogo from "../../public/assets/logos/linkedin-logo.svg";
-import githubLogo from "../../public/assets/logos/github-logo.svg";
+import linkedinLogo from "../public/assets/logos/linkedin-logo.svg";
+import githubLogo from "../public/assets/logos/github-logo.svg";
 
 const SocialMedia = () => {
   return (
