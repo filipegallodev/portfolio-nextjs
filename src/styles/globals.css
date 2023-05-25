@@ -28,6 +28,12 @@
   }
 }
 
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 button {
   letter-spacing: 0.05rem;
 }
