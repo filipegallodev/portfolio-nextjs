@@ -17,13 +17,9 @@ export async function generateMetadata(
 
   return {
     title: "FG | Projetos | " + project.name,
+    description: "Projetos do Desenvolvedor Front-End Filipe Gallo.",
   };
 }
-
-export const metadata: Metadata = {
-  title: "Filipe Gallo | Projeto",
-  description: "Projetos do Desenvolvedor Front-End Filipe Gallo.",
-};
 
 export default function RootLayout({
   children,
