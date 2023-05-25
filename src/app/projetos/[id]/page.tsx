@@ -4,22 +4,11 @@ import React, { useEffect, useState } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ProjectInfo from "@/components/Projects/ProjectInfo";
+import { useParams } from "next/navigation";
 
-type Props = {
-  params: {
-    id: string;
-  };
-};
-
-export async function generateStaticParams() {
-  const projects = await fetch("/projects.json").then((res) => res.json());
-  if (!projects) return [];
-  return projects.map((project: IProject) => ({
-    id: project.name,
-  }));
-}
-
-export default function Projeto({ params: { id } }: Props) {
+export default function Projeto() {
+  const params = useParams();
+  const id = params.id;
   const [project, setProject] = useState<IProject>();
 
   useEffect(() => {
@@ -34,7 +23,7 @@ export default function Projeto({ params: { id } }: Props) {
     <React.Fragment>
       <Header />
       <main className="animeLeft">
-        {project && <ProjectInfo {...project} />}
+        {project ? <ProjectInfo {...project} /> : "Nenhum projeto encontrado."}
       </main>
       <Footer />
     </React.Fragment>
