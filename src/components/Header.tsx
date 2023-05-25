@@ -33,7 +33,12 @@ const Header = () => {
   const routePathname = usePathname();
   const { theme } = useAppSelector((state) => state.theme);
   const dispatch = useAppDispatch();
-  const [themeIcon, setThemeIcon] = useState<JSX.Element | null>(null);
+  const [themeIcon, setThemeIcon] = useState<JSX.Element>(
+    <Brightness4TwoToneIcon
+      fontSize="large"
+      onClick={() => dispatch(setLightTheme())}
+    />
+  );
 
   useEffect(() => {
     switch (theme) {
