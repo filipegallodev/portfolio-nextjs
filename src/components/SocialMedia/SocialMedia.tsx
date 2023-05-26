@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import linkedinLogo from "../../public/assets/logos/linkedin-logo.svg";
-import githubLogo from "../../public/assets/logos/github-logo.svg";
+import LinkedinIcon from "@/../../public/assets/logos/linkedin-logo.svg";
+import GitHubIcon from "@/../../public/assets/logos/github-logo.svg";
 
 const SocialMedia = () => {
   return (
@@ -14,7 +14,7 @@ const SocialMedia = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={linkedinLogo} alt="LinkedIn" />
+            <Image src={LinkedinIcon} alt="LinkedIn" />
             LinkedIn
           </Link>
         </Item>
@@ -24,7 +24,7 @@ const SocialMedia = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Image src={githubLogo} alt="GitHub" />
+            <Image src={GitHubIcon} alt="GitHub" />
             GitHub
           </Link>
         </Item>
@@ -40,11 +40,6 @@ const Container = styled.div`
     max-width: 48px;
     height: auto;
   }
-`;
-
-const Title = styled.h3`
-  font-size: 1.5em;
-  color: var(--main-color);
 `;
 
 const List = styled.ul`

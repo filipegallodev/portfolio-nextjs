@@ -9,13 +9,14 @@ import TechnologiesContainer from "@/components/Technologies/TechnologiesContain
 import SectionTitle from "@/components/SectionTitle";
 import SubTitle from "@/components/SubTitle";
 import ProjectContainer from "@/components/Projects/ProjectContainer";
-import SocialMedia from "@/components/SocialMedia";
+import SocialMedia from "@/components/SocialMedia/SocialMedia";
 import ContactForm from "@/components/Form/ContactForm";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import Section from "@/components/Section";
 import Header from "@/components/Header";
 import TechStack from "@/components/Technologies/TechStack";
+import SocialMediaIcons from "@/components/SocialMedia/SocialMediaIcons";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
             <Headline>
               <span>Desenvolvedor</span> <Strong>Front-End</Strong>
             </Headline>
+            <SocialMediaIcons />
           </Info>
           <ImageStyled src={FilipePhoto} alt="Foto de Filipe Gallo" />
           <TechStack />
@@ -132,7 +134,7 @@ const Headline = styled.span`
 const Strong = styled.strong`
   background: var(--main-text-color);
   border-radius: 6px;
-  padding: 2px 8px;
-  color: #22f;
+  padding: 0px 4px;
+  color: #2268ff;
   font-weight: 600;
 `;
