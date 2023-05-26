@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const SocialMediaIcons = () => {
   const { theme } = useAppSelector((state) => state.theme);
-  const [gitHub, setGitHub] = useState(GitHubDarkIcon);
+  const [gitHub, setGitHub] = useState(GitHubLightIcon);
 
   useEffect(() => {
     if (theme === "dark") return setGitHub(GitHubLightIcon);
