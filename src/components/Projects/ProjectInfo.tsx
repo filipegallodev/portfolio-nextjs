@@ -107,7 +107,7 @@ const ImageSkeleton = styled.div`
 `;
 
 const Title = styled.h2`
-  margin-top: 24px;
+  margin: 24px 0px 12px 0px;
   font-size: 1.75rem;
   color: var(--main-color);
 `;
@@ -120,7 +120,7 @@ const SubTitle = styled.h3`
   color: var(--main-color);
   font-size: 1.5rem;
   font-weight: 500;
-  margin-top: 48px;
+  margin: 48px 0px 12px 0px;
 `;
 
 const TechnologiesList = styled.ul`
@@ -137,6 +137,7 @@ const TechnologiesCard = styled.li`
   border-radius: 4px;
   font-size: 1.25rem;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  color: #f5f5f5;
 `;
 
 const LinksContainer = styled.div`

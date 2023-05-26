@@ -6,7 +6,7 @@ const TechnologyCard = ({ name, imageUrl }: ITechnology) => {
   return (
     <Item key={name}>
       <Image src={imageUrl} alt={name} />
-      <span>{name}</span>
+      <Name>{name}</Name>
     </Item>
   );
 };
@@ -23,12 +23,15 @@ const Item = styled.li`
   border-radius: 6px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   text-align: left;
-  font-size: 1.25rem;
-  color: var(--card-text-color);
   & img {
     max-width: 48px;
     height: auto;
   }
+`;
+
+const Name = styled.span`
+  font-size: 1.25rem;
+  color: #f5f5f5;
 `;
 
 export default TechnologyCard;
