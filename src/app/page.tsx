@@ -25,7 +25,7 @@ export default function Home() {
       <main className="animeLeft">
         <Container>
           <Info>
-            <MainTitle>Filipe Gallo</MainTitle>
+            <MainTitle>Oi, sou o Filipe Gallo!</MainTitle>
             <Headline>
               <span>Desenvolvedor</span> <Strong>Front-End</Strong>
             </Headline>
@@ -112,7 +112,7 @@ const MainTitle = styled.h1`
   margin: 0px;
   margin-bottom: 16px;
   font-size: 4.5rem;
-  font-weight: 700;
+  font-weight: 600;
   @media (max-width: 450px) {
     font-size: 3.5rem;
   }
@@ -122,9 +122,13 @@ const Headline = styled.span`
   font-size: 3rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  font-weight: 500;
   gap: 16px;
+  @media (max-width: 1360px) {
+    justify-content: center;
+  }
   @media (max-width: 450px) {
     font-size: 2rem;
     gap: 6px;
@@ -134,7 +138,7 @@ const Headline = styled.span`
 const Strong = styled.strong`
   background: var(--main-text-color);
   border-radius: 6px;
-  padding: 0px 4px;
+  padding: 0px 2px;
   color: #2268ff;
   font-weight: 600;
 `;

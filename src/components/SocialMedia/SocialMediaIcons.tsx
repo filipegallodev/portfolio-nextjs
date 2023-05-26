@@ -45,7 +45,7 @@ const Container = styled.div`
   border-radius: 6px;
   padding: 4px;
   margin-top: 16px;
-  @media (max-width: 1350px) {
+  @media (max-width: 1360px) {
     justify-content: center;
   }
 `;

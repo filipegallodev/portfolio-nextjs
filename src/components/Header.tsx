@@ -127,7 +127,7 @@ const Logo = styled.span`
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   gap: 0.5rem;
   font-size: 2rem;
   color: var(--specific-text-color);
