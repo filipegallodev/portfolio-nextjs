@@ -1,6 +1,9 @@
 const DarkTheme = {
   color: {
-    background: "#050505",
+    background: {
+      main: "#050505",
+      contrast: "#f5f5f5",
+    },
     title: "#dc1457",
     text: "#f5f5f5",
     card: {

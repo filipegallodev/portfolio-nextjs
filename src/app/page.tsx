@@ -15,6 +15,7 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import Section from "@/components/Section";
 import Header from "@/components/Header";
+import TechStack from "@/components/Technologies/TechStack";
 
 export default function Home() {
   return (
@@ -28,7 +29,8 @@ export default function Home() {
               <span>Desenvolvedor</span> <Strong>Front-End</Strong>
             </Headline>
           </Info>
-          <Image src={FilipePhoto} alt="Foto de Filipe Gallo" />
+          <ImageStyled src={FilipePhoto} alt="Foto de Filipe Gallo" />
+          <TechStack />
         </Container>
         <Section>
           <SectionTitle>Conheça um pouco sobre mim</SectionTitle>
@@ -67,20 +69,12 @@ const PulseImage = keyframes`
 
 const Container = styled.section`
   min-height: 90vh;
-  margin-bottom: 120px;
+  margin: 100px 0px 120px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10rem;
-  & img {
-    width: 100%;
-    max-width: 480px;
-    height: auto;
-    border-radius: 100%;
-    filter: drop-shadow(0 0 0.75rem var(--main-color));
-    animation: ${PulseImage} 2.5s infinite alternate;
-  }
   @media (max-width: 1350px) {
     gap: 0;
     & img {
@@ -88,10 +82,20 @@ const Container = styled.section`
     }
   }
   @media (max-width: 510px) {
+    margin-top: 0px;
     & img {
       max-width: 90%;
     }
   }
+`;
+
+const ImageStyled = styled(Image)`
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 100%;
+  filter: drop-shadow(0 0 0.75rem var(--main-color));
+  animation: ${PulseImage} 2.5s infinite alternate;
 `;
 
 const Info = styled.div`
@@ -107,7 +111,6 @@ const MainTitle = styled.h1`
   margin-bottom: 16px;
   font-size: 4.5rem;
   font-weight: 700;
-  text-transform: uppercase;
   @media (max-width: 450px) {
     font-size: 3.5rem;
   }
@@ -130,7 +133,6 @@ const Strong = styled.strong`
   background: var(--main-text-color);
   border-radius: 6px;
   padding: 2px 8px;
-  text-transform: uppercase;
   color: #22f;
   font-weight: 600;
 `;
