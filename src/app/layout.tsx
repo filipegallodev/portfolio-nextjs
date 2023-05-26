@@ -1,7 +1,7 @@
-import StyledComponentsRegistry from "@/lib/registry";
-import "@/styles/globals.css";
-import { Providers } from "@/store/provider";
 import ReduxThemeProvider from "@/components/ReduxThemeProvider";
+import "@/styles/globals.css";
+import StyledComponentsRegistry from "@/lib/registry";
+import { Providers } from "@/store/provider";
 import GlobalStyle from "@/styles/GlobalStyle";
 
 export const metadata = {
