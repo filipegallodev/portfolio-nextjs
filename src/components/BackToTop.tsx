@@ -19,6 +19,7 @@ const BackToTop = () => {
 const Container = styled.div`
   display: flex;
   justify-content: center;
+  margin: 64px 0px;
 `;
 
 const ButtonStyled = styled.button`
