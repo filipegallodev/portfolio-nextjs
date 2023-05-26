@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
 const ProjectInfo = (project: IProject) => {
   const { name, description, technologies, test, github, imageUrl } = project;
@@ -11,7 +12,9 @@ const ProjectInfo = (project: IProject) => {
   if (!project) return null;
   return (
     <Container>
-      <Back onClick={() => router.back()}>← Lista</Back>
+      <Back onClick={() => router.back()}>
+        <KeyboardBackspaceIcon fontSize="large" />
+      </Back>
       <ImageContainer>
         {imageLoading && <ImageSkeleton />}
         <Image
@@ -54,8 +57,9 @@ const Container = styled.section`
 `;
 
 const Back = styled.button`
-  margin: 24px 0 24px 0;
-  padding: 16px 48px;
+  margin: 24px 0;
+  display: flex;
+  padding: 8px 36px;
   background-color: var(--main-color);
   border: none;
   border-radius: 4px;
