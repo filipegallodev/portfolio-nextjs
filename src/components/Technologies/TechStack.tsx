@@ -39,11 +39,20 @@ const Container = styled.div`
 const Title = styled.h2`
   font-size: 1.75rem;
   font-weight: 600;
+  @media (max-width: 640px) {
+    margin: 0 auto;
+  }
 `;
 
 const TechContainer = styled.div`
   display: flex;
   gap: 24px;
+  @media (max-width: 640px) {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `;
 
 const ImageStyled = styled(Image)`

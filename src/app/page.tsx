@@ -79,15 +79,9 @@ const Container = styled.section`
   gap: 10rem;
   @media (max-width: 1350px) {
     gap: 0;
-    & img {
-      margin-bottom: 96px;
-    }
   }
   @media (max-width: 510px) {
     margin-top: 0px;
-    & img {
-      max-width: 90%;
-    }
   }
 `;
 
@@ -98,6 +92,12 @@ const ImageStyled = styled(Image)`
   border-radius: 100%;
   filter: drop-shadow(0 0 0.75rem var(--main-color));
   animation: ${PulseImage} 2.5s infinite alternate;
+  @media (max-width: 1350px) {
+    margin-bottom: 96px;
+  }
+  @media (max-width: 510px) {
+    max-width: 90%;
+  }
 `;
 
 const Info = styled.div`
