@@ -9,7 +9,7 @@ const SectionStyled = styled.section`
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 96px;
-  @media (max-width: 1010px) {
+  @media (max-width: 1240px) {
     margin: 0 24px;
   }
 `;
