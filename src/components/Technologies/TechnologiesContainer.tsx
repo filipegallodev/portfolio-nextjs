@@ -24,13 +24,11 @@ const TechnologiesContainer = () => {
 };
 
 const Container = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
   padding: 0;
-  @media (max-width: 500px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export default TechnologiesContainer;

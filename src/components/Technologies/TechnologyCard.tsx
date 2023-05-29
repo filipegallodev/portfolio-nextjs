@@ -5,33 +5,64 @@ import styled from "styled-components";
 const TechnologyCard = ({ name, imageUrl }: ITechnology) => {
   return (
     <Item key={name}>
-      <Image src={imageUrl} alt={name} />
-      <Name>{name}</Name>
+      <ImageContainer>
+        <ImageStyled src={imageUrl} alt={name} />
+      </ImageContainer>
+      <NameContainer>
+        <Name>{name}</Name>
+      </NameContainer>
     </Item>
   );
 };
 
 const Item = styled.li`
-  list-style: none;
+  width: 180px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  background: ${(props) => props.theme.color.background.card.image};
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  overflow: hidden;
+  @media (max-width: 500px) {
+    width: 148px;
+  }
+  @media (max-width: 360px) {
+    width: 100px;
+    height: 100px;
+  }
+`;
+
+const ImageContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 16px;
-  width: 100%;
+  justify-content: center;
   padding: 16px;
-  background-color: var(--card-background-color);
-  border-left: 3px solid var(--secundary-color);
-  border-radius: 6px;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  text-align: left;
-  & img {
-    max-width: 48px;
-    height: auto;
+`;
+
+const ImageStyled = styled(Image)`
+  max-width: 64px;
+  max-height: 64px;
+`;
+
+const NameContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.color.background.card.text};
+  text-align: center;
+  @media (max-width: 360px) {
+    display: none;
   }
 `;
 
 const Name = styled.span`
   font-size: 1.25rem;
-  color: #f5f5f5;
+  color: ${(props) => props.theme.color.text};
+  font-weight: 500;
 `;
 
 export default TechnologyCard;
