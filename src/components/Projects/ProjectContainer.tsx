@@ -1,23 +1,29 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
+import { useAppDispatch } from "@/store/hooks/useAppDispatch";
+import { fetchProjects } from "@/store/reducers/projects";
+import { useAppSelector } from "@/store/hooks/useAppSelector";
 
 const ProjectContainer = () => {
-  const [listaProjetos, setListaProjetos] = React.useState([]);
+  const dispatch = useAppDispatch();
+  const [projects, setProjects] = useState<IProject[] | null>();
+  const { loading, data } = useAppSelector((state) => state.projects);
 
   useEffect(() => {
-    async function fetchProjects() {
-      const response = await fetch("/projects.json");
-      const data = await response.json();
-      setListaProjetos(data);
-    }
-    fetchProjects();
+    if (!data) dispatch(fetchProjects());
   }, []);
 
+  useEffect(() => {
+    if (data) setProjects(data);
+  }, [data]);
+
+  if (loading) return <p>Carregando...</p>;
+  if (!projects) return null;
   return (
     <React.Fragment>
       <Container>
-        {listaProjetos.map((project: IProject) => (
+        {projects.map((project: IProject) => (
           <ProjectCard key={project.id} {...project} />
         ))}
       </Container>
