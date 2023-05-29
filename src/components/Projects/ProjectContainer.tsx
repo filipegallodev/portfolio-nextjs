@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import { useAppDispatch } from "@/store/hooks/useAppDispatch";
 import { fetchProjects } from "@/store/reducers/projects";
 import { useAppSelector } from "@/store/hooks/useAppSelector";
+import ProjectSkeleton from "./ProjectSkeleton";
 
 const ProjectContainer = () => {
   const dispatch = useAppDispatch();
@@ -18,8 +19,7 @@ const ProjectContainer = () => {
     if (data) setProjects(data);
   }, [data]);
 
-  if (loading) return <p>Carregando...</p>;
-  if (!projects) return null;
+  if (loading || !projects) return <ProjectSkeleton />;
   return (
     <React.Fragment>
       <Container>
