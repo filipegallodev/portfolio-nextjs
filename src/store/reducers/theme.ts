@@ -8,11 +8,13 @@ function getLocalStorageTheme(): string {
   return "dark";
 }
 
+const initialState = {
+  theme: getLocalStorageTheme(),
+};
+
 const slice = createSlice({
   name: "theme",
-  initialState: {
-    theme: getLocalStorageTheme(),
-  },
+  initialState,
   reducers: {
     setDarkTheme: (state) => {
       state.theme = "dark";
