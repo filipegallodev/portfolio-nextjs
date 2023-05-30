@@ -13,22 +13,22 @@ const AboutText = () => {
       </Text>
       <Text>
         Atualmente, faço faculdade de Análise e Desenvolvimento de Sistemas na
-        UNINTER e faço estágio na área.
+        UNINTER e estou realizando um estágio na área.
       </Text>
       <Text>
-        Em meu tempo livre gosto de estar estudando, seja em cursos ou
-        aprendendo na prática algo acompanhando a documentação. Além disso,
-        sempre estou desenvolvendo algum projeto real, para colocar em prática
-        todo o conhecimento adquirido e expor o que consigo fazer.
+        Em meu tempo livre gosto de estudar, seja em cursos ou aprendendo
+        sozinho na prática acompanhando a documentação. Além disso, sempre estou
+        desenvolvendo algum projeto real, assim consigo colocar em prática todo
+        o conhecimento adquirido e expor o que consigo fazer.
       </Text>
       <Text>
-        Gosto muito de aprofundar conhecimentos em tecnologias que já faço uso,
-        para poder tirar o maior proveito e potencial da ferramenta.
+        Gosto muito de aprofundar meus conhecimentos em tecnologias que já tenho
+        prática, para poder tirar o maior proveito e potencial da ferramenta.
       </Text>
       <Text>
         Enfim, por hora é isso! Sinta-se à vontade para se conectar e conversar
         comigo por meio dos meus contatos! Ficarei feliz em me conectar com você
-        e respondê-lo{"("}a{")"}.
+        e respondê-lo{"(a)"}.
       </Text>
     </>
   );
