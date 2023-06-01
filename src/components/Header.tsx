@@ -106,7 +106,7 @@ const Container = styled.div`
     margin: 0 24px;
     gap: 32px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 920px) {
     flex-direction: column;
     padding: 24px;
   }
@@ -117,7 +117,7 @@ const LogoMenuContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 40px;
-  @media (max-width: 800px) {
+  @media (max-width: 920px) {
     flex-direction: column;
   }
 `;
