@@ -136,12 +136,12 @@ const TechnologiesList = styled.ul`
 
 const TechnologiesCard = styled.li`
   list-style: none;
-  background-color: var(--card-background-color);
+  background-color: ${(props) => props.theme.color.tech.card};
   padding: 12px 20px;
   border-radius: 4px;
   font-size: 1.25rem;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  color: #f5f5f5;
+  color: ${(props) => props.theme.color.text};
 `;
 
 const LinksContainer = styled.div`

@@ -13,7 +13,7 @@ const ProjectContainer = () => {
 
   useEffect(() => {
     if (!data) dispatch(fetchProjects());
-  }, []);
+  }, [data, dispatch]);
 
   useEffect(() => {
     if (data) setProjects(data);

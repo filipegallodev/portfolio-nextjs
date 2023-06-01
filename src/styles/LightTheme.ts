@@ -10,6 +10,10 @@ const LightTheme: DefaultTheme = {
         text: "#ddd",
       },
     },
+    tech: {
+      container: "#eaeaea",
+      card: "#f1f1f1",
+    },
     title: "#dc1457",
     text: "#050505",
   },
