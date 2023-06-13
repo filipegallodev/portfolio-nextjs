@@ -4,7 +4,7 @@
 
 ## 🎯 Objetivo
 
-Meu site com a exposição de projetos desenvolvidos por mim!
+Site pessoal que conta com uma breve descrição minha e a exposição de alguns dos projetos desenvolvidos por mim.
 
 ## 📰 Conteúdo
 
