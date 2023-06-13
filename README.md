@@ -1,6 +1,6 @@
 # 🌎 Site com portfólio
 
-![Capa](https://i.imgur.com/taq3N92.png)
+![Capa](https://i.imgur.com/nUONgfb.png)
 
 ## 🎯 Objetivo
 
