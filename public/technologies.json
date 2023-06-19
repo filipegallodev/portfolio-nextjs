@@ -8,6 +8,30 @@
     }
   },
   {
+    "name": "TypeScript",
+    "imageUrl": {
+      "src": "/assets/logos/typescript-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Node.js",
+    "imageUrl": {
+      "src": "/assets/logos/nodejs-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Express",
+    "imageUrl": {
+      "src": "/assets/logos/express-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
     "name": "React",
     "imageUrl": {
       "src": "/assets/logos/react-logo.svg",
@@ -23,14 +47,7 @@
       "height": 128
     }
   },
-  {
-    "name": "TypeScript",
-    "imageUrl": {
-      "src": "/assets/logos/typescript-logo.svg",
-      "width": 128,
-      "height": 128
-    }
-  },
+
   {
     "name": "Redux",
     "imageUrl": {

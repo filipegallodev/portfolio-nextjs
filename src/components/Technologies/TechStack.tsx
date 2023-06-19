@@ -1,8 +1,8 @@
 import React from "react";
 import NextIcon from "@/../../public/assets/logos/nextjs-logo.svg";
-import JavaScriptIcon from "@/../../public/assets/logos/javascript-logo.svg";
+import ExpressIcon from "@/../../public/assets/logos/express-logo.svg";
 import TypeScriptIcon from "@/../../public/assets/logos/typescript-logo.svg";
-import ReactIcon from "@/../../public/assets/logos/react-logo.svg";
+import NodeJsIcon from "@/../../public/assets/logos/nodejs-logo.svg";
 import StyledComponentsIcon from "@/../../public/assets/logos/styled-components-logo.svg";
 import ReduxIcon from "@/../../public/assets/logos/redux-logo.svg";
 import Image from "next/image";
@@ -11,14 +11,18 @@ import styled from "styled-components";
 const TechStack = () => {
   return (
     <Container>
-      <Title>Tech Stack:</Title>
+      <Title>Main Stack:</Title>
       <TechContainer>
-        <ImageStyled src={NextIcon} alt="Next.js" />
-        <ImageStyled src={ReactIcon} alt="React.js" />
-        <ImageStyled src={TypeScriptIcon} alt="TypeScript" />
-        <ImageStyled src={JavaScriptIcon} alt="TypeScript" />
-        <ImageStyled src={ReduxIcon} alt="Redux.js" />
-        <ImageStyled src={StyledComponentsIcon} alt="Styled-components" />
+        <ImageStyled src={NextIcon} alt="Next.js" title="Next.js" />
+        <ImageStyled src={TypeScriptIcon} alt="TypeScript" title="TypeScript" />
+        <ImageStyled src={NodeJsIcon} alt="Node.js" title="Node.js" />
+        <ImageStyled src={ExpressIcon} alt="Express" title="Express" />
+        <ImageStyled src={ReduxIcon} alt="Redux.js" title="Redux.js" />
+        <ImageStyled
+          src={StyledComponentsIcon}
+          alt="Styled-components"
+          title="Styled-components"
+        />
       </TechContainer>
     </Container>
   );
