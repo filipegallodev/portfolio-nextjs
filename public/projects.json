@@ -106,6 +106,19 @@
     "test": "https://redux-origamid.vercel.app/"
   },
   {
+    "name": "Lista de Notas",
+    "id": "lista-de-notas",
+    "description": "Aplicação Web para gerenciar suas notas.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/lista-de-notas.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["Next.js", "TypeScript", "CSS"],
+    "github": "https://github.com/filipegallodev/note-list",
+    "test": "https://note-list-fg.vercel.app/"
+  },
+  {
     "name": "Sorteador",
     "id": "sorteador",
     "description": "Projeto desenvolvido utilizando TDD no curso de React com Jest.",
@@ -171,19 +184,6 @@
     "technologies": ["HTML", "CSS", "JavaScript", "RegExp"],
     "github": "https://github.com/filipegallodev/alura-challenge-criptografia",
     "test": "https://filipegallodev.github.io/alura-challenge-criptografia/"
-  },
-  {
-    "name": "App de Lista de Notas",
-    "id": "lista-de-notas",
-    "description": "Aplicação Web para escrever e salvar notas.",
-    "imageUrl": {
-      "src": "/assets/projetos-capas/lista-de-notas.webp",
-      "width": 1908,
-      "height": 1080
-    },
-    "technologies": ["HTML", "CSS", "JavaScript"],
-    "github": "https://github.com/filipegallodev/note-list",
-    "test": "https://filipegallodev.github.io/note-list/"
   },
   {
     "name": "Encurtador de Links",
