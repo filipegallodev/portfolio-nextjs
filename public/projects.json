@@ -1,5 +1,28 @@
 [
   {
+    "name": "NextBank",
+    "id": "banco-digital",
+    "description": "Aplicação WEB Full-Stack de um banco digital fictício, o NextBank.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/banco.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "Redux.js",
+      "Styled-components",
+      "Material-UI"
+    ],
+    "github": "https://github.com/filipegallodev/banco-digital",
+    "test": "https://nextbank-fg.vercel.app/"
+  },
+  {
     "name": "Next E-commerce",
     "id": "next-ecommerce",
     "description": "Um E-commerce fictício com o objetivo de treinar as hard skills com um projeto real utilizando tecnologias modernas.",
@@ -43,27 +66,6 @@
     "technologies": ["Next.js", "TypeScript", "Node.js", "Express.js", "CSS"],
     "github": "https://github.com/filipegallodev/zippia-jobs",
     "test": "https://zippia-jobs-filipegallodev.vercel.app/test/jobs"
-  },
-  {
-    "name": "Banco Digital [EM ATUALIZAÇÃO]",
-    "id": "banco-digital",
-    "description": "Aplicação Web Full-Stack fictícia de um banco digital. Note: Por estar em atualização, certas funcionalidades podem estar indisponíveis.",
-    "imageUrl": {
-      "src": "/assets/projetos-capas/ng-cash.webp",
-      "width": 1908,
-      "height": 1080
-    },
-    "technologies": [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "Prisma",
-      "CSS"
-    ],
-    "github": "https://github.com/filipegallodev/ng-cash-app",
-    "test": "https://ngcash-app.vercel.app/"
   },
   {
     "name": "Mundo dos Filmes",
@@ -148,8 +150,8 @@
       "height": 1080
     },
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "github": "https://github.com/filipegallodev/portfolio",
-    "test": "https://filipegallodev.github.io/portfolio/"
+    "github": "https://github.com/filipegallodev/portfolio-antigo",
+    "test": "https://filipegallodev.github.io/portfolio-antigo/"
   },
   {
     "name": "Animais Fantásticos",
