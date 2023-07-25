@@ -197,7 +197,7 @@
       "height": 1080
     },
     "technologies": ["HTML", "CSS", "JavaScript", "Fetch API"],
-    "github": "https://github.com/filipegallodev/imageUrl-shortner",
+    "github": "https://github.com/filipegallodev/url-shortner",
     "test": "https://encurtador-de-links-fg.vercel.app/"
   },
   {
