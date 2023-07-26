@@ -108,6 +108,19 @@
     "test": "https://redux-origamid.vercel.app/"
   },
   {
+    "name": "URL Shortener",
+    "id": "url-shorteneer",
+    "description": "Aplicação Web de uma encurtador de URLs utilizando API.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/encurtador-de-links.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": ["Next.js", "TypeScript", "CSS", "API"],
+    "github": "https://github.com/filipegallodev/url-shortener",
+    "test": "https://url-shortener-fg.vercel.app/"
+  },
+  {
     "name": "Lista de Notas",
     "id": "lista-de-notas",
     "description": "Aplicação Web para gerenciar suas notas.",
@@ -186,19 +199,6 @@
     "technologies": ["HTML", "CSS", "JavaScript", "RegExp"],
     "github": "https://github.com/filipegallodev/alura-challenge-criptografia",
     "test": "https://filipegallodev.github.io/alura-challenge-criptografia/"
-  },
-  {
-    "name": "Encurtador de Links",
-    "id": "encurtador-de-links",
-    "description": "Aplicação Web para encurtar links muito grandes.",
-    "imageUrl": {
-      "src": "/assets/projetos-capas/encurtador-de-links.webp",
-      "width": 1908,
-      "height": 1080
-    },
-    "technologies": ["HTML", "CSS", "JavaScript", "Fetch API"],
-    "github": "https://github.com/filipegallodev/url-shortner",
-    "test": "https://encurtador-de-links-fg.vercel.app/"
   },
   {
     "name": "Optimus Tech - Vagas",
