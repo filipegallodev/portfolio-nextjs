@@ -109,10 +109,10 @@
   },
   {
     "name": "URL Shortener",
-    "id": "url-shorteneer",
+    "id": "url-shortener",
     "description": "Aplicação Web de uma encurtador de URLs utilizando API.",
     "imageUrl": {
-      "src": "/assets/projetos-capas/encurtador-de-links.webp",
+      "src": "/assets/projetos-capas/url-shortener.webp",
       "width": 1908,
       "height": 1080
     },
