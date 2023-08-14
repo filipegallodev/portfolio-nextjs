@@ -27,7 +27,7 @@ export default function Home() {
           <Info>
             <MainTitle>Oi, sou o Filipe Gallo!</MainTitle>
             <Headline>
-              <span>Desenvolvedor</span> <Strong>Front-End</Strong>
+              <span>Desenvolvedor de</span> <Strong>Software</Strong>
             </Headline>
             <SocialMediaIcons />
           </Info>

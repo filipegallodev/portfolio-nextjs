@@ -5,8 +5,8 @@ import { Providers } from "@/store/provider";
 import GlobalStyle from "@/styles/GlobalStyle";
 
 export const metadata = {
-  title: "Filipe Gallo | Desenvolvedor Front-End",
-  description: "Site oficial do Desenvolvedor Front-End Filipe Gallo.",
+  title: "Filipe Gallo | Desenvolvedor de Software",
+  description: "Site oficial do Desenvolvedor de Software Filipe Gallo.",
 };
 
 export default function RootLayout({

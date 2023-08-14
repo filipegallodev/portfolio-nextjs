@@ -5,9 +5,9 @@ const AboutText = () => {
   return (
     <>
       <Text>
-        Hello, World! Sou Desenvolvedor Front-End, tenho 23 anos e sou do estado
-        de São Paulo! Estou sempre focado na evolução constante todos os dias,
-        visando melhorar como desenvolvedor, em suas diversas atividades
+        Hello, World! Sou Desenvolvedor de Software, tenho 23 anos e sou do
+        estado de São Paulo! Estou sempre focado na evolução constante todos os
+        dias, visando melhorar como desenvolvedor, em suas diversas atividades
         envolvidas. Tenho o sonho e objetivo de trabalhar na área e fazer o que
         mais gosto, desenvolver aplicações belas e funcionais.
       </Text>
