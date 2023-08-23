@@ -38,9 +38,7 @@ const HeaderMenu = () => {
   const dispatch = useAppDispatch();
   const routePathname = usePathname();
   const router = useRouter();
-  const [windowWidth, setWindowWidth] = useState(
-    window !== undefined ? window.innerWidth : 1920
-  );
+  const [windowWidth, setWindowWidth] = useState(0);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -49,7 +47,10 @@ const HeaderMenu = () => {
       if (window !== undefined) setWindowWidth(window.innerWidth);
     }
 
-    if (window !== undefined) window.addEventListener("resize", handleResize);
+    if (window !== undefined) {
+      setWindowWidth(window.innerWidth);
+      window.addEventListener("resize", handleResize);
+    }
   }, []);
 
   function changeTheme() {
