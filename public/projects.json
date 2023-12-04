@@ -2,7 +2,7 @@
   {
     "name": "NextBank",
     "id": "banco-digital",
-    "description": "Aplicação WEB Full-Stack de um banco digital fictício, o NextBank.",
+    "description": "Aplicação web full-stack que simula um banco digital fictício denominado NextBank. Este projeto abrange tanto o front-end quanto o back-end, proporcionando uma experiência completa de usuário em um ambiente virtual de serviços financeiros. Ao incorporar tecnologias modernas e práticas de desenvolvimento, o NextBank representa meu comprometimento com a criação de soluções inovadoras e funcionais no campo da programação web. Este projeto destaca minhas habilidades no desenvolvimento de aplicações escaláveis e intuitivas, oferecendo aos usuários uma interface amigável e eficiente para suas transações bancárias simuladas.",
     "imageUrl": {
       "src": "/assets/projetos-capas/banco.webp",
       "width": 1908,
@@ -25,7 +25,7 @@
   {
     "name": "Next E-commerce",
     "id": "next-ecommerce",
-    "description": "Um E-commerce fictício com o objetivo de treinar as hard skills com um projeto real utilizando tecnologias modernas.",
+    "description": "E-commerce fictício com o propósito de aprimorar minhas habilidades técnicas por meio de um projeto prático e real. Ao empregar tecnologias modernas, este projeto representa meu comprometimento em explorar e aplicar conhecimentos relevantes no desenvolvimento de plataformas de comércio eletrônico. A experiência adquirida abrange a implementação do front-end, demonstrando minha capacidade de criar soluções robustas e funcionais. Este e-commerce fictício serve como evidência tangível do meu compromisso contínuo com o desenvolvimento de habilidades práticas e a busca pela excelência em projetos web.",
     "imageUrl": {
       "src": "/assets/projetos-capas/next-ecommerce.webp",
       "width": 1908,
@@ -44,7 +44,7 @@
   {
     "name": "Jardim Consultoria Ambiental",
     "id": "jardim-ambiental",
-    "description": "Projeto profissional desenvolvido para a empresa Jardim Consultoria Ambiental.",
+    "description": "Projeto profissional em colaboração com a empresa Jardim Consultoria Ambiental. Este empreendimento reflete meu comprometimento em oferecer soluções personalizadas e eficazes para as necessidades específicas da empresa. Este projeto demonstra não apenas minhas habilidades técnicas, mas também minha capacidade de compreender e abordar desafios específicos do setor, contribuindo assim para o sucesso e o impacto positivo da Jardim Consultoria Ambiental.",
     "imageUrl": {
       "src": "/assets/projetos-capas/jardim-ambiental.webp",
       "width": 1908,
@@ -57,7 +57,7 @@
   {
     "name": "Zippia Jobs",
     "id": "zippia-jobs",
-    "description": "Aplicação Web Full-Stack que exibe uma página fictícia de vagas com opções de filtro.",
+    "description": "Aplicação web full-stack que apresenta uma página fictícia de oportunidades de emprego, enriquecida com opções de filtro. Esta iniciativa destaca meu compromisso em criar soluções práticas e centradas no usuário. Ao abordar tanto o front-end quanto o back-end, a aplicação proporciona uma experiência interativa e intuitiva para os usuários que buscam oportunidades específicas. A inclusão de opções de filtro visa facilitar a navegação e personalizar a pesquisa, demonstrando minha atenção aos detalhes e foco na usabilidade. Este projeto ressalta minha capacidade de desenvolver aplicações web completas e funcionais, visando atender às necessidades específicas dos usuários em um contexto fictício de busca por vagas.",
     "imageUrl": {
       "src": "/assets/projetos-capas/zippia-jobs.webp",
       "width": 1908,
@@ -70,7 +70,7 @@
   {
     "name": "Mundo dos Filmes",
     "id": "mundo-dos-filmes",
-    "description": "Aplicação Web que exibe os filmes mais populares no momento, possui página com detalhes de cada filme, permite favoritar os filmes preferidos e a consulta de filmes.",
+    "description": "Aplicação web que destaca os filmes mais populares do momento, oferecendo uma experiência envolvente aos usuários. Esta plataforma inclui uma página detalhada para cada filme, proporcionando informações abrangentes e visualmente atraentes. Com recursos de favoritos integrados, os usuários têm a capacidade de personalizar suas seleções, enquanto a função de consulta facilita a busca por filmes específicos. Este projeto demonstra minha habilidade em criar aplicações web que não apenas apresentam informações relevantes, mas também oferecem interatividade e personalização para os usuários, tornando a experiência de descoberta de filmes mais agradável e eficiente.",
     "imageUrl": {
       "src": "/assets/projetos-capas/mundo-dos-filmes.webp",
       "width": 1908,
@@ -90,7 +90,7 @@
   {
     "name": "Dogs",
     "id": "dogs",
-    "description": "Projeto desenvolvido nos cursos de React e Redux da Origamid.",
+    "description": "Projeto elaborado durante os cursos de React e Redux oferecidos pela Origamid. Este empreendimento reflete meu empenho em aprimorar minhas habilidades no desenvolvimento web, utilizando tecnologias modernas e práticas recomendadas. Inspirado no conteúdo abordado nos cursos, o projeto abrange conceitos fundamentais de React e Redux, destacando minha capacidade de aplicar esses conhecimentos de forma prática. A participação nesses cursos contribuiu significativamente para a minha compreensão e domínio das ferramentas essenciais para a construção de interfaces interativas e gerenciamento de estados em aplicações web modernas.",
     "imageUrl": {
       "src": "/assets/projetos-capas/dogs.webp",
       "width": 1908,
@@ -110,7 +110,7 @@
   {
     "name": "URL Shortener",
     "id": "url-shortener",
-    "description": "Aplicação Web de uma encurtador de URLs utilizando API.",
+    "description": "Aplicação web que funciona como um encurtador de URLs, aproveitando uma API para otimizar a experiência do usuário. Este projeto demonstra minha capacidade de integrar tecnologias externas de maneira eficaz, oferecendo uma solução prática e eficiente para a gestão de URLs longas. Os usuários podem utilizar a aplicação para encurtar URLs extensas, simplificando links e facilitando o compartilhamento. A implementação desta aplicação destaca não apenas minha proficiência no desenvolvimento web, mas também minha habilidade em criar soluções que agregam valor e praticidade ao usuário final.",
     "imageUrl": {
       "src": "/assets/projetos-capas/url-shortener.webp",
       "width": 1908,
@@ -123,7 +123,7 @@
   {
     "name": "Lista de Notas",
     "id": "lista-de-notas",
-    "description": "Aplicação Web para gerenciar suas notas.",
+    "description": "Aplicação web dedicada ao gerenciamento de notas, proporcionando aos usuários uma plataforma intuitiva e eficiente para organizar suas informações. Este projeto destaca minha capacidade de criar soluções práticas e centradas no usuário. A aplicação permite aos usuários adicionar, editar e excluir notas, fornecendo uma experiência fluida e personalizável. Ao enfatizar a usabilidade e a simplicidade, o projeto visa oferecer uma ferramenta eficaz para a organização e consulta de informações pessoais. Esta aplicação web para gerenciamento de notas representa meu compromisso em criar soluções funcionais que atendem às necessidades práticas do usuário no contexto do gerenciamento de informações pessoais.",
     "imageUrl": {
       "src": "/assets/projetos-capas/lista-de-notas.webp",
       "width": 1908,
@@ -136,7 +136,7 @@
   {
     "name": "Sorteador",
     "id": "sorteador",
-    "description": "Projeto desenvolvido utilizando TDD no curso de React com Jest.",
+    "description": "Projeto elaborado utilizando a metodologia de Desenvolvimento Orientado a Testes (TDD) durante o curso de React com Jest. Este empreendimento reflete não apenas minha proficiência no desenvolvimento com React, mas também a aplicação de práticas robustas de teste desde as fases iniciais do desenvolvimento. O TDD proporcionou uma abordagem sistemática para criar componentes React, garantindo a qualidade e confiabilidade do código. A utilização do Jest como framework de teste contribuiu para a automação eficaz dos testes unitários, assegurando que o projeto atenda aos requisitos funcionais de forma consistente. Este projeto não apenas demonstra minha habilidade técnica, mas também destaca meu compromisso com a produção de software de alta qualidade por meio da integração de práticas de TDD no ciclo de desenvolvimento.",
     "imageUrl": {
       "src": "/assets/projetos-capas/sorteador.webp",
       "width": 1908,
@@ -154,22 +154,9 @@
     "test": "https://jest-react-alura.vercel.app/"
   },
   {
-    "name": "Antigo site pessoal com Portfólio",
-    "id": "portfolio-anterior",
-    "description": "Aplicação Web do meu antigo site pessoal com portfólio desenvolvido utilizando JavaScript.",
-    "imageUrl": {
-      "src": "/assets/projetos-capas/portfolio-anterior.webp",
-      "width": 1908,
-      "height": 1080
-    },
-    "technologies": ["HTML", "CSS", "JavaScript"],
-    "github": "https://github.com/filipegallodev/portfolio-antigo",
-    "test": "https://filipegallodev.github.io/portfolio-antigo/"
-  },
-  {
     "name": "Animais Fantásticos",
     "id": "animais-fantasticos",
-    "description": "Projeto desenvolvido no curso de JavaScript da Origamid.",
+    "description": "Projeto elaborado durante o curso de JavaScript oferecido pela Origamid. Este empreendimento destaca meu empenho em aprimorar minhas habilidades em programação, especificamente em JavaScript. O projeto abrange conceitos fundamentais da linguagem, evidenciando minha capacidade de aplicar os conhecimentos adquiridos de forma prática. Inspirado pelo conteúdo abordado no curso, o projeto reflete minha compreensão das principais funcionalidades do JavaScript e a capacidade de utilizá-las para criar soluções interativas e eficientes. A participação nesse curso contribuiu significativamente para o meu desenvolvimento profissional e para a consolidação do meu conhecimento em JavaScript.",
     "imageUrl": {
       "src": "/assets/projetos-capas/animais-fantasticos.webp",
       "width": 1908,
@@ -190,7 +177,7 @@
   {
     "name": "Decodificador",
     "id": "decodificador",
-    "description": "Aplicação Web para criptografar e descriptografar textos.",
+    "description": "Aplicação web dedicada à criptografia e descriptografia de textos. Este projeto demonstra minha capacidade de criar soluções práticas e seguras para a manipulação de informações sensíveis. Os usuários podem utilizar a aplicação para criptografar seus textos, garantindo a confidencialidade das informações, e, posteriormente, descriptografar quando necessário. A ênfase na segurança e usabilidade reflete meu compromisso em proporcionar uma experiência segura e intuitiva aos usuários que buscam proteger suas comunicações online. Esta aplicação web para criptografia e descriptografia destaca não apenas minhas habilidades técnicas, mas também meu entendimento das necessidades de segurança e privacidade dos usuários na era digital.",
     "imageUrl": {
       "src": "/assets/projetos-capas/decodificador.webp",
       "width": 1908,
@@ -203,7 +190,7 @@
   {
     "name": "Optimus Tech - Vagas",
     "id": "optimus-tech",
-    "description": "Página estática de vagas de uma empresa fictícia.",
+    "description": "Página estática de oportunidades de emprego para uma empresa fictícia. Este projeto destaca minha capacidade de criar interfaces simples e informativas, fornecendo aos visitantes uma visão rápida e clara das vagas disponíveis. A página inclui detalhes concisos sobre cada posição, com ênfase na facilidade de navegação para os potenciais candidatos. O design limpo e a estrutura organizada buscam proporcionar uma experiência intuitiva aos usuários que exploram as oportunidades de emprego. Este projeto exemplifica meu compromisso em criar soluções visuais e funcionais, mesmo em contextos estáticos, visando atender às necessidades de comunicação e recrutamento de forma eficaz.",
     "imageUrl": {
       "src": "/assets/projetos-capas/optimus-tech.webp",
       "width": 1908,

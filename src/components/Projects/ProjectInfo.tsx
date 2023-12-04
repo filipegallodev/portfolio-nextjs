@@ -118,6 +118,7 @@ const Title = styled.h2`
 
 const Description = styled.p`
   font-size: 1.35rem;
+  line-height: 1.75rem;
 `;
 
 const SubTitle = styled.h3`
