@@ -1,34 +1,27 @@
 import React from "react";
 import styled from "styled-components";
-import TechnologyCard from "./TechnologyCard";
+import TechnologiesFrontEnd from "./TechnologiesFrontEnd";
+import TechnologiesBackEnd from "./TechnologiesBackEnd";
+import TechnologiesVersioning from "./TechnologiesVersioning";
 
 const TechnologiesContainer = () => {
-  const [technologies, setTechnologies] = React.useState<Array<ITechnology>>();
-
-  React.useEffect(() => {
-    fetch("./technologies.json")
-      .then((res) => res.json())
-      .then((data) => setTechnologies(data));
-  }, []);
-
   return (
     <React.Fragment>
-      <Container>
-        {technologies &&
-          technologies.map((technology) => (
-            <TechnologyCard key={technology.name} {...technology} />
-          ))}
-      </Container>
+      <TechnologiesContainerTitle>Front-End</TechnologiesContainerTitle>
+      <TechnologiesFrontEnd />
+      <TechnologiesContainerTitle>Back-End</TechnologiesContainerTitle>
+      <TechnologiesBackEnd />
+      <TechnologiesContainerTitle>Versionamento</TechnologiesContainerTitle>
+      <TechnologiesVersioning />
     </React.Fragment>
   );
 };
 
-const Container = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 16px;
-  padding: 0;
+const TechnologiesContainerTitle = styled.ul`
+  font-size: 1.5rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin: 40px auto 20px auto;
 `;
 
 export default TechnologiesContainer;

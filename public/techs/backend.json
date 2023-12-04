@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Java",
+    "imageUrl": {
+      "src": "/assets/logos/java-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Node.js",
+    "imageUrl": {
+      "src": "/assets/logos/nodejs-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "PostgreSQL",
+    "imageUrl": {
+      "src": "/assets/logos/postgresql-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  }
+]

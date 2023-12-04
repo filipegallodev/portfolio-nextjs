@@ -1,5 +1,13 @@
 [
   {
+    "name": "React",
+    "imageUrl": {
+      "src": "/assets/logos/react-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
     "name": "Next.js",
     "imageUrl": {
       "src": "/assets/logos/nextjs-logo.svg",
@@ -11,30 +19,6 @@
     "name": "TypeScript",
     "imageUrl": {
       "src": "/assets/logos/typescript-logo.svg",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "name": "Node.js",
-    "imageUrl": {
-      "src": "/assets/logos/nodejs-logo.svg",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "name": "Express",
-    "imageUrl": {
-      "src": "/assets/logos/express-logo.svg",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "name": "React",
-    "imageUrl": {
-      "src": "/assets/logos/react-logo.svg",
       "width": 128,
       "height": 128
     }
@@ -85,14 +69,6 @@
     "name": "Bootstrap 5",
     "imageUrl": {
       "src": "/assets/logos/bootstrap-logo.svg",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
-    "name": "Git",
-    "imageUrl": {
-      "src": "/assets/logos/git-logo.svg",
       "width": 128,
       "height": 128
     }
