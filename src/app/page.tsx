@@ -27,16 +27,15 @@ export default function Home() {
           <Info>
             <MainTitle>Oi, sou o Filipe Gallo!</MainTitle>
             <Headline>
-              <span>Desenvolvedor de</span> <Strong>Software</Strong>
+              <span>Desenvolvedor</span> <Strong>Full-Stack</Strong>
             </Headline>
             <SocialMediaIcons />
           </Info>
           <ImageStyled src={FilipePhoto} alt="Foto de Filipe Gallo" />
-          <TechStack />
         </Container>
         <Section>
           <SectionTitle>Conheça um pouco sobre mim</SectionTitle>
-          <SubTitle>Um breve resumo</SubTitle>
+          <SubTitle>Prazer, Filipe</SubTitle>
           <AboutText />
           <SubTitle>Tecnologias</SubTitle>
           <TechnologiesContainer />
@@ -139,6 +138,6 @@ const Strong = styled.strong`
   background: var(--main-text-color);
   border-radius: 6px;
   padding: 0px 2px;
-  color: #2268ff;
+  color: #ff0077;
   font-weight: 600;
 `;

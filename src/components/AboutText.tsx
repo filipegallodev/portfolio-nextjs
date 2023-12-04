@@ -5,30 +5,32 @@ const AboutText = () => {
   return (
     <>
       <Text>
-        Hello, World! Sou Desenvolvedor de Software, tenho 23 anos e sou do
-        estado de São Paulo! Estou sempre focado na evolução constante todos os
-        dias, visando melhorar como desenvolvedor, em suas diversas atividades
-        envolvidas. Tenho o sonho e objetivo de trabalhar na área e fazer o que
-        mais gosto, desenvolver aplicações belas e funcionais.
+        Sou um desenvolvedor Full-Stack apaixonado por criar aplicações
+        inovadoras e impactantes. Com sólida experiência em desenvolvimento,
+        busco constantemente aprimorar minhas habilidades técnicas e
+        conhecimentos, sempre me mantendo atualizado e me dedicando diariamente
+        a projetos desafiadores que me permitam crescer como desenvolvedor e
+        como pessoa.
       </Text>
       <Text>
-        Atualmente, faço faculdade de Análise e Desenvolvimento de Sistemas na
-        UNINTER e estou realizando um estágio na área.
+        Atualmente, ocupo a posição de desenvolvedor na NW Software, onde
+        desempenho um papel crucial na concepção, implementação e aprimoramento
+        contínuo de soluções inovadoras de software. Minha responsabilidade
+        principal é colaborar de maneira proativa com uma equipe talentosa,
+        visando superar desafios complexos e atender às expectativas dos nossos
+        clientes.
       </Text>
       <Text>
-        Em meu tempo livre gosto de estudar, seja em cursos ou aprendendo
-        sozinho na prática acompanhando a documentação. Além disso, sempre estou
-        desenvolvendo algum projeto real, assim consigo colocar em prática todo
-        o conhecimento adquirido e expor o que consigo fazer.
+        Logo abaixo, você irá encontrar minhas principais habilidades técnicas.
+        Essas habilidades não apenas compõem a base técnica do meu conhecimento,
+        mas também refletem meu compromisso com as práticas modernas de
+        desenvolvimento, a qualidade do código e a entrega de soluções eficazes.
+        Estou sempre ansioso para aplicar essas habilidades em desafios
+        complexos e contribuir para projetos inovadores.
       </Text>
       <Text>
-        Gosto muito de aprofundar meus conhecimentos em tecnologias que já tenho
-        prática, para poder tirar o maior proveito e potencial da ferramenta.
-      </Text>
-      <Text>
-        Enfim, por hora é isso! Sinta-se à vontade para se conectar e conversar
-        comigo por meio dos meus contatos! Ficarei feliz em me conectar com você
-        e respondê-lo{"(a)"}.
+        Estou aberto a conexões e prontamente disponível para conversar sobre
+        oportunidades e colaborações. Vamos nos conectar?!
       </Text>
     </>
   );
