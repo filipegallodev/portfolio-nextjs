@@ -34,7 +34,7 @@ const ContactForm = () => {
           className="subject"
           type="text"
           id="subject"
-          placeholder="Título"
+          placeholder="Assunto"
           value={subject}
           onChange={({ target }) => setSubject(target.value)}
         />
@@ -77,9 +77,13 @@ const Input = styled.input`
   border-radius: 6px;
   border: none;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.1s;
   &:focus {
     outline: 2px solid var(--form-border);
     box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 1);
+  }
+  &:hover {
+    outline: 2px solid var(--form-border);
   }
 `;
 
@@ -93,9 +97,13 @@ const Textarea = styled.textarea`
   border: none;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   resize: none;
+  transition: 0.1s;
   &:focus {
     outline: 2px solid var(--form-border);
     box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 1);
+  }
+  &:hover {
+    outline: 2px solid var(--form-border);
   }
 `;
 

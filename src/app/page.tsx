@@ -15,7 +15,6 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import Section from "@/components/Section";
 import Header from "@/components/Header";
-import TechStack from "@/components/Technologies/TechStack";
 import SocialMediaIcons from "@/components/SocialMedia/SocialMediaIcons";
 
 export default function Home() {
