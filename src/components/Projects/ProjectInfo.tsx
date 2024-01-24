@@ -69,7 +69,7 @@ const Back = styled.button`
   cursor: pointer;
   transition: 0.1s;
   &:hover {
-    background-color: #ad003a;
+    background-color: var(--main-color-hover);
   }
 `;
 
@@ -81,9 +81,9 @@ const ImageContainer = styled.div`
   display: grid;
   overflow: hidden;
   border-radius: 4px;
-  border: 2px solid rgba(220, 20, 87, 0.5);
+  border: 2px solid ${(props) => props.theme.color.tech.border};
   border-radius: 8px;
-  box-shadow: 0 0 4px rgba(220, 20, 87, 0.5);
+  box-shadow: 0 0 4px ${(props) => props.theme.color.tech.border};
   & img {
     grid-area: 1/1;
     width: 100%;

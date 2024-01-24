@@ -5,7 +5,7 @@ const AboutText = () => {
   return (
     <>
       <Text>
-        Sou um desenvolvedor Full-Stack apaixonado por criar aplicações
+        Sou um Desenvolvedor Back-End apaixonado por criar aplicações
         inovadoras e impactantes. Com sólida experiência em desenvolvimento,
         busco constantemente aprimorar minhas habilidades técnicas e
         conhecimentos, sempre me mantendo atualizado e me dedicando diariamente

@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 :root {
-  --main-color: #dc1457;
-  --main-color-hover: #c20342;
+  --main-color: #1e53ff;
+  --main-color-hover: #0634cc;
   --secundary-color: #fd5;
   --specific-text-color: #fff;
   --main-text-color: #f5f5f5;
   --main-background-color: #050505;
   --card-text-color: #f5f5f5;
   --card-background-color: #252525;
-  --form-border: #dc1457;
+  --form-border: #1e53ff;
   --button: #fd5;
   --button-hover: #f3c612;
   --error: #f11;

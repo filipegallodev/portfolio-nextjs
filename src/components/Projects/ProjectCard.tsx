@@ -45,16 +45,16 @@ const Card = styled.li`
   display: flex;
   flex-direction: column;
   width: 380px;
-  max-height: 292px;
+  max-height: 300px;
   height: 100%;
-  border: 2px solid rgba(220, 20, 87, 0.5);
+  border: 2px solid ${(props) => props.theme.color.tech.border};
   border-radius: 6px;
-  box-shadow: 0 0 2px rgba(220, 20, 87, 0.5);
+  box-shadow: 0 0 2px ${(props) => props.theme.color.tech.border};
   overflow: hidden;
   transition: 0.1s;
   &:hover {
-    background-color: rgba(220, 20, 87, 0.35);
-    box-shadow: 0 0 4px rgba(220, 20, 87, 0.35);
+    background-color: ${(props) => props.theme.color.tech.hover};
+    box-shadow: 0 0 4px ${(props) => props.theme.color.tech.hover};
     filter: #232332;
   }
 `;
@@ -77,8 +77,8 @@ const ImageStyled = styled(Image)`
 `;
 
 const InfoContainer = styled.div`
-  border-top: 1px solid rgba(220, 20, 87, 0.5);
-  padding: 8px;
+  border-top: 1px solid ${(props) => props.theme.color.tech.border};
+  padding: 12px 8px;
   background: ${(props) => props.theme.color.tech.container};
   cursor: pointer;
 `;
@@ -87,7 +87,7 @@ const Name = styled.h2`
   font-size: 1.125rem;
   margin-bottom: 8px;
   font-weight: 600;
-  color: #dc1457;
+  color: ${(props) => props.theme.color.title};
 `;
 
 const TechContainer = styled.div`

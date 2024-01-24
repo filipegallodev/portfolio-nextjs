@@ -25,7 +25,7 @@ const Container = styled.div`
 const ButtonStyled = styled.button`
   border-radius: 100%;
   border: none;
-  background: #c20342;
+  background: var(--main-color);
   color: #fff;
   padding: 12px;
   display: flex;
@@ -34,7 +34,7 @@ const ButtonStyled = styled.button`
   cursor: pointer;
   transition: 0.1s;
   &:hover {
-    background: #af003a;
+    background: var(--main-color-hover);
   }
 `;
 

@@ -13,8 +13,10 @@ const LightTheme: DefaultTheme = {
     tech: {
       container: "#eaeaea",
       card: "#f1f1f1",
+      border: "#1e53ff7f",
+      hover: "#1e53ff59",
     },
-    title: "#dc1457",
+    title: "#1e53ff",
     text: "#050505",
   },
 };

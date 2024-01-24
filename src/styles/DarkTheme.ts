@@ -9,10 +9,12 @@ const DarkTheme = {
       },
     },
     tech: {
-      container: "#151515",
+      container: "#0c0c0c",
       card: "#252525",
+      border: "#1e53ff7f",
+      hover: "#1e53ff59",
     },
-    title: "#dc1457",
+    title: "#1e53ff",
     text: "#f5f5f5",
   },
 };

@@ -27,7 +27,7 @@ export default function Home() {
           <Info>
             <MainTitle>Oi, sou o Filipe Gallo!</MainTitle>
             <Headline>
-              <span>Desenvolvedor</span> <Strong>Full-Stack</Strong>
+              <span>Desenvolvedor</span> <Strong>Back-End</Strong>
             </Headline>
             <SocialMediaIcons />
           </Info>
@@ -138,6 +138,6 @@ const Strong = styled.strong`
   background: var(--main-text-color);
   border-radius: 6px;
   padding: 0px 2px;
-  color: #ff0077;
+  color: #1e53ff;
   font-weight: 600;
 `;

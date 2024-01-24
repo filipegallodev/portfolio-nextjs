@@ -1,5 +1,13 @@
 [
   {
+    "name": "Spring Boot",
+    "imageUrl": {
+      "src": "/assets/logos/spring-logo.png",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
     "name": "Java",
     "imageUrl": {
       "src": "/assets/logos/java-logo.svg",
