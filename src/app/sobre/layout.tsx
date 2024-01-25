@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Filipe Gallo | Sobre",
-  description: "Sobre o Desenvolvedor Full-Stack Filipe Gallo.",
+  description: "Sobre o Desenvolvedor Back-End Filipe Gallo.",
 };
 
 export default function AboutLayout({
