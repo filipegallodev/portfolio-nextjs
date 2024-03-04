@@ -5,28 +5,21 @@ const AboutText = () => {
   return (
     <>
       <Text>
-        Sou um Desenvolvedor Back-End apaixonado por criar aplicações
-        inovadoras e impactantes. Com sólida experiência em desenvolvimento,
-        busco constantemente aprimorar minhas habilidades técnicas e
-        conhecimentos, sempre me mantendo atualizado e me dedicando diariamente
-        a projetos desafiadores que me permitam crescer como desenvolvedor e
-        como pessoa.
+        Desenvolvedor com sólida experiência em desenvolvimento, manutenção de
+        sistemas e resolução de problemas, buscando sempre as melhores e mais
+        modernas práticas utilizadas pelo mercado.
       </Text>
       <Text>
-        Atualmente, ocupo a posição de desenvolvedor na NW Software, onde
-        desempenho um papel crucial na concepção, implementação e aprimoramento
-        contínuo de soluções inovadoras de software. Minha responsabilidade
-        principal é colaborar de maneira proativa com uma equipe talentosa,
-        visando superar desafios complexos e atender às expectativas dos nossos
-        clientes.
+        Atualmente, atuo como desenvolvedor na NW Software, onde desempenho um
+        papel crucial no desenvolvimento e manutenção dos módulos do sistema,
+        manutenção e modelagem do banco de dados e a resolução de problemas
+        complexos. Também sou responsável por um projeto de customização para um
+        cliente.
       </Text>
       <Text>
-        Logo abaixo, você irá encontrar minhas principais habilidades técnicas.
-        Essas habilidades não apenas compõem a base técnica do meu conhecimento,
-        mas também refletem meu compromisso com as práticas modernas de
-        desenvolvimento, a qualidade do código e a entrega de soluções eficazes.
-        Estou sempre ansioso para aplicar essas habilidades em desafios
-        complexos e contribuir para projetos inovadores.
+        Sou um profissional flexível, não sou engessado em tecnologias, sempre
+        estou disposto e consigo aprender facilmente novas ferramentas. Topo
+        qualquer desafio que vier.
       </Text>
       <Text>
         Estou aberto a conexões e prontamente disponível para conversar sobre
