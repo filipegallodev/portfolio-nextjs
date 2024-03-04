@@ -3,7 +3,6 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
-import { spawn } from "child_process";
 
 const ProjectInfo = (project: IProject) => {
   const { name, description, technologies, test, github, imageUrl } = project;
