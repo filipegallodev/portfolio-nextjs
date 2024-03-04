@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import DevLogo from "../../public/assets/img/dev.png";
+import DevLogo from "../../../public/assets/img/dev.png";
 import styled from "styled-components";
 import HeaderMenu from "./HeaderMenu";
 

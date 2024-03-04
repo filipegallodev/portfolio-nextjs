@@ -6,15 +6,15 @@ import styled, { keyframes } from "styled-components";
 import FilipePhoto from "../../public/assets/img/foto-filipe.webp";
 import AboutText from "@/components/AboutText";
 import TechnologiesContainer from "@/components/Technologies/TechnologiesContainer";
-import SectionTitle from "@/components/SectionTitle";
-import SubTitle from "@/components/SubTitle";
+import SectionTitle from "@/components/Section/SectionTitle";
+import SubTitle from "@/components/Section/SubTitle";
 import ProjectContainer from "@/components/Projects/ProjectContainer";
 import SocialMedia from "@/components/SocialMedia/SocialMedia";
 import ContactForm from "@/components/Form/ContactForm";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
-import Section from "@/components/Section";
-import Header from "@/components/Header";
+import Section from "@/components/Section/Section";
+import Header from "@/components/Header/Header";
 import SocialMediaIcons from "@/components/SocialMedia/SocialMediaIcons";
 
 export default function Home() {

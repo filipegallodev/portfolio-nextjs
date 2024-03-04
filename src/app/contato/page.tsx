@@ -1,14 +1,14 @@
 "use client";
 
 import React from "react";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import ContactForm from "@/components/Form/ContactForm";
 import SocialMedia from "@/components/SocialMedia/SocialMedia";
 import Footer from "@/components/Footer";
-import Title from "@/components/SectionTitle";
+import Title from "@/components/Section/SectionTitle";
 import BackToTop from "@/components/BackToTop";
-import SubTitle from "@/components/SubTitle";
-import Section from "@/components/Section";
+import SubTitle from "@/components/Section/SubTitle";
+import Section from "@/components/Section/Section";
 
 export default function Contato() {
   return (

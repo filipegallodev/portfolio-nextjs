@@ -1,4 +1,4 @@
-import ReduxThemeProvider from "@/components/ReduxThemeProvider";
+import ReduxThemeProvider from "@/components/ThemeController/ReduxThemeProvider";
 import "@/styles/globals.css";
 import StyledComponentsRegistry from "@/lib/registry";
 import { Providers } from "@/store/provider";

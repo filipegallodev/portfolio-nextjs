@@ -2,11 +2,11 @@
 
 import React from "react";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import ProjectContainer from "@/components/Projects/ProjectContainer";
-import Title from "@/components/SectionTitle";
+import Title from "@/components/Section/SectionTitle";
 import BackToTop from "@/components/BackToTop";
-import Section from "@/components/Section";
+import Section from "@/components/Section/Section";
 
 export default function Projetos() {
   return (

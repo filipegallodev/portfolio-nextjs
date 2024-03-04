@@ -5,7 +5,7 @@ import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
-import ThemeSelector from "./ThemeSelector";
+import ThemeSelector from "../ThemeController/ThemeSelector";
 import { Divider } from "@mui/material";
 import { useAppDispatch } from "@/store/hooks/useAppDispatch";
 import { setDarkTheme, setLightTheme } from "@/store/reducers/theme";
