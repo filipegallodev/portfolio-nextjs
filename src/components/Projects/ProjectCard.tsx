@@ -2,12 +2,13 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
+import ProjectTags from "../ProjectTags/ProjectTags";
 
 const maxTechs = 3;
 
 const ProjectCard = (project: IProject) => {
   const router = useRouter();
-  const { id, name, imageUrl, technologies } = project;
+  const { id, name, imageUrl, technologies, tags } = project;
   const [imageLoading, setImageLoading] = useState<boolean>(true);
 
   return (
@@ -25,7 +26,10 @@ const ProjectCard = (project: IProject) => {
         />
       </ImageContainer>
       <InfoContainer>
-        <Name>{name}</Name>
+        <ProjectInformationHeader>
+          <Name>{name}</Name>
+          <ProjectTags tags={tags} />
+        </ProjectInformationHeader>
         <TechContainer>
           {technologies.map((tech, index) => {
             if (index < maxTechs) {
@@ -44,11 +48,11 @@ const ProjectCard = (project: IProject) => {
 const Card = styled.li`
   display: flex;
   flex-direction: column;
-  width: 380px;
-  max-height: 300px;
+  width: 570px;
+  max-height: 450px;
   height: 100%;
   border: 2px solid ${(props) => props.theme.color.tech.border};
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: 0 0 2px ${(props) => props.theme.color.tech.border};
   overflow: hidden;
   transition: 0.1s;
@@ -83,9 +87,15 @@ const InfoContainer = styled.div`
   cursor: pointer;
 `;
 
+const ProjectInformationHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+`;
+
 const Name = styled.h2`
   font-size: 1.125rem;
-  margin-bottom: 8px;
   font-weight: 600;
   color: ${(props) => props.theme.color.title};
 `;
@@ -101,7 +111,7 @@ const TechCard = styled.div`
   list-style: none;
   background-color: ${(props) => props.theme.color.tech.card};
   padding: 6px;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 0.875rem;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
   color: ${(props) => props.theme.color.text};
