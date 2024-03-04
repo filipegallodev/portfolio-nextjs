@@ -84,10 +84,11 @@ const Container = styled.section`
 `;
 
 const ImageStyled = styled(Image)`
+  background-color: var(--main-color);
   width: 100%;
   max-width: 480px;
   height: auto;
-  border-radius: 100%;
+  border-radius: 40px 120px 40px 120px;
   filter: drop-shadow(0 0 0.75rem var(--main-color));
   animation: ${PulseImage} 2.5s infinite alternate;
   @media (max-width: 1350px) {
