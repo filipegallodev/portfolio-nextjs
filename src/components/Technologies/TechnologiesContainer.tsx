@@ -17,8 +17,9 @@ const TechnologiesContainer = () => {
   );
 };
 
-const TechnologiesContainerTitle = styled.ul`
+const TechnologiesContainerTitle = styled.h4`
   font-size: 1.5rem;
+  font-weight: 500;
   color: var(--main-color);
   text-transform: uppercase;
   margin: 40px auto 20px auto;
