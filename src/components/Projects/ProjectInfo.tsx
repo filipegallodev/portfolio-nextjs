@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
+import { spawn } from "child_process";
 
 const ProjectInfo = (project: IProject) => {
   const { name, description, technologies, test, github, imageUrl } = project;
@@ -33,15 +34,23 @@ const ProjectInfo = (project: IProject) => {
       </TechnologiesList>
       <SubTitle>Links</SubTitle>
       <LinksContainer>
-        <LinkButton href={test} target="_blank" rel="noreferrer">
-          Teste
-        </LinkButton>
+        {test ? (
+          <LinkButton href={test} target="_blank" rel="noreferrer">
+            Teste
+          </LinkButton>
+        ) : (
+          <WithoutLink>
+            O link para teste estará disponível em breve.
+          </WithoutLink>
+        )}
         {github ? (
           <LinkButton href={github} target="_blank" rel="noreferrer">
             Respositório
           </LinkButton>
         ) : (
-          <span>Repositório no GitHub indisponível para este projeto.</span>
+          <WithoutLink>
+            Repositório indisponível para projetos profissionais.
+          </WithoutLink>
         )}
       </LinksContainer>
     </Container>
@@ -168,6 +177,10 @@ const LinkButton = styled.a`
     padding-right: 20px;
     background-color: rgb(255, 208, 18);
   }
+`;
+
+const WithoutLink = styled.p`
+  margin-bottom: 8px;
 `;
 
 export default ProjectInfo;

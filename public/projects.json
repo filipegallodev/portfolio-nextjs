@@ -1,5 +1,27 @@
 [
   {
+    "name": "StockApp! (WIP)",
+    "id": "stock-app",
+    "description": "Aplicação web full-stack de um sistema de gestão que atua para que o usuário obtenha um melhor controle sobre as suas vendas, o seu estoque de produtos e os clientes que o seu comércio possui.",
+    "imageUrl": {
+      "src": "/assets/projetos-capas/wip.webp",
+      "width": 1908,
+      "height": 1080
+    },
+    "technologies": [
+      "Java",
+      "Spring Boot",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Redux.js",
+      "Styled-components",
+      "Material-UI"
+    ],
+    "github": "https://github.com/filipegallodev/stock-app",
+    "test": null
+  },
+  {
     "name": "NextBank",
     "id": "banco-digital",
     "description": "Aplicação web full-stack que simula um banco digital fictício denominado NextBank. Este projeto abrange tanto o front-end quanto o back-end, proporcionando uma experiência completa de usuário em um ambiente virtual de serviços financeiros. Ao incorporar tecnologias modernas e práticas de desenvolvimento, o NextBank representa meu comprometimento com a criação de soluções inovadoras e funcionais no campo da programação web. Este projeto destaca minhas habilidades no desenvolvimento de aplicações escaláveis e intuitivas, oferecendo aos usuários uma interface amigável e eficiente para suas transações bancárias simuladas.",
