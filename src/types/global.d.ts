@@ -7,9 +7,10 @@ interface IProject {
     width: number;
     height: number;
   };
-  technologies: string[];
+  technologies: Array<string>;
   github: string;
   test: string;
+  tags: [{ name: string; id: string }];
 }
 
 interface ITechnology {

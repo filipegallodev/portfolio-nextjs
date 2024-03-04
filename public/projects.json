@@ -19,7 +19,11 @@
       "Material-UI"
     ],
     "github": "https://github.com/filipegallodev/stock-app",
-    "test": null
+    "test": null,
+    "tags": [
+      { "name": "Pessoal", "id": "pessoal" },
+      { "name": "Em Desenvolvimento", "id": "desenvolvimento" }
+    ]
   },
   {
     "name": "NextBank",
@@ -42,7 +46,11 @@
       "Material-UI"
     ],
     "github": "https://github.com/filipegallodev/banco-digital",
-    "test": "https://nextbank-fg.vercel.app/"
+    "test": "https://nextbank-fg.vercel.app/",
+    "tags": [
+      { "name": "Pessoal", "id": "pessoal" },
+      { "name": "Em Desenvolvimento", "id": "desenvolvimento" }
+    ]
   },
   {
     "name": "Next E-commerce",
@@ -61,7 +69,11 @@
       "Material-UI"
     ],
     "github": "https://github.com/filipegallodev/next-ecommerce",
-    "test": "https://next-ecommerce-fg.vercel.app/"
+    "test": "https://next-ecommerce-fg.vercel.app/",
+    "tags": [
+      { "name": "Pessoal", "id": "pessoal" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   },
   {
     "name": "Jardim Consultoria Ambiental",
@@ -74,7 +86,11 @@
     },
     "technologies": ["Next.js", "TypeScript", "Styled-components"],
     "github": null,
-    "test": "https://www.jardimambiental.com/"
+    "test": "https://www.jardimambiental.com/",
+    "tags": [
+      { "name": "Profissional", "id": "profissional" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   },
   {
     "name": "Zippia Jobs",
@@ -87,7 +103,11 @@
     },
     "technologies": ["Next.js", "TypeScript", "Node.js", "Express.js", "CSS"],
     "github": "https://github.com/filipegallodev/zippia-jobs",
-    "test": "https://zippia-jobs-filipegallodev.vercel.app/test/jobs"
+    "test": "https://zippia-jobs-filipegallodev.vercel.app/test/jobs",
+    "tags": [
+      { "name": "Pessoal", "id": "pessoal" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   },
   {
     "name": "Mundo dos Filmes",
@@ -107,7 +127,11 @@
       "TMDB API"
     ],
     "github": "https://github.com/filipegallodev/mundo-dos-filmes",
-    "test": "https://mundo-dos-filmes.vercel.app/"
+    "test": "https://mundo-dos-filmes.vercel.app/",
+    "tags": [
+      { "name": "Pessoal", "id": "pessoal" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   },
   {
     "name": "Dogs",
@@ -127,7 +151,11 @@
       "CSS"
     ],
     "github": "https://github.com/filipegallodev/redux-origamid/tree/main/projeto-redux",
-    "test": "https://redux-origamid.vercel.app/"
+    "test": "https://redux-origamid.vercel.app/",
+    "tags": [
+      { "name": "Curso", "id": "curso" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   },
   {
     "name": "URL Shortener",
@@ -140,7 +168,11 @@
     },
     "technologies": ["Next.js", "TypeScript", "CSS", "API"],
     "github": "https://github.com/filipegallodev/url-shortener",
-    "test": "https://url-shortener-fg.vercel.app/"
+    "test": "https://url-shortener-fg.vercel.app/",
+    "tags": [
+      { "name": "Pessoal", "id": "pessoal" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   },
   {
     "name": "Lista de Notas",
@@ -153,7 +185,11 @@
     },
     "technologies": ["Next.js", "TypeScript", "CSS"],
     "github": "https://github.com/filipegallodev/note-list",
-    "test": "https://note-list-fg.vercel.app/"
+    "test": "https://note-list-fg.vercel.app/",
+    "tags": [
+      { "name": "Pessoal", "id": "pessoal" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   },
   {
     "name": "Sorteador",
@@ -173,7 +209,11 @@
       "CSS"
     ],
     "github": "https://github.com/filipegallodev/jest-react-alura/tree/main/sorteador-de-amigo-secreto",
-    "test": "https://jest-react-alura.vercel.app/"
+    "test": "https://jest-react-alura.vercel.app/",
+    "tags": [
+      { "name": "Curso", "id": "curso" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   },
   {
     "name": "Animais Fantásticos",
@@ -194,7 +234,11 @@
       "Fetch API"
     ],
     "github": "https://github.com/filipegallodev/javascript-origamid/tree/main/projeto-final/animais-fantasticos",
-    "test": "https://animais-fantasticos-origamid-fg.vercel.app/"
+    "test": "https://animais-fantasticos-origamid-fg.vercel.app/",
+    "tags": [
+      { "name": "Curso", "id": "curso" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   },
   {
     "name": "Decodificador",
@@ -207,7 +251,11 @@
     },
     "technologies": ["HTML", "CSS", "JavaScript", "RegExp"],
     "github": "https://github.com/filipegallodev/alura-challenge-criptografia",
-    "test": "https://filipegallodev.github.io/alura-challenge-criptografia/"
+    "test": "https://filipegallodev.github.io/alura-challenge-criptografia/",
+    "tags": [
+      { "name": "Pessoal", "id": "pessoal" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   },
   {
     "name": "Optimus Tech - Vagas",
@@ -220,6 +268,10 @@
     },
     "technologies": ["HTML", "CSS"],
     "github": "https://github.com/filipegallodev/optimus-tech-vagas",
-    "test": "https://filipegallodev.github.io/optimus-tech-vagas/"
+    "test": "https://filipegallodev.github.io/optimus-tech-vagas/",
+    "tags": [
+      { "name": "Pessoal", "id": "pessoal" },
+      { "name": "Finalizado", "id": "finalizado" }
+    ]
   }
 ]

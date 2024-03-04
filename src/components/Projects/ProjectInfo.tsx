@@ -5,7 +5,8 @@ import styled, { keyframes } from "styled-components";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
 const ProjectInfo = (project: IProject) => {
-  const { name, description, technologies, test, github, imageUrl } = project;
+  const { name, description, technologies, test, github, imageUrl, tags } =
+    project;
   const router = useRouter();
   const [imageLoading, setImageLoading] = useState<boolean>(true);
 
@@ -23,7 +24,16 @@ const ProjectInfo = (project: IProject) => {
           onLoad={() => setImageLoading(false)}
         />
       </ImageContainer>
-      <Title>{name}</Title>
+      <ProjectInformationHeader>
+        <Title>{name}</Title>
+        <TagsContainer>
+          {tags.map(({ name, id }) => (
+            <TagCard key={id} className={id}>
+              {name}
+            </TagCard>
+          ))}
+        </TagsContainer>
+      </ProjectInformationHeader>
       <Description>{description}</Description>
       <SubTitle>Tecnologias</SubTitle>
       <TechnologiesList>
@@ -70,7 +80,7 @@ const Back = styled.button`
   padding: 8px 36px;
   background-color: var(--main-color);
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
   color: #fff;
   font-size: 1.35rem;
@@ -88,7 +98,6 @@ const ImageContainer = styled.div`
   height: 100%;
   display: grid;
   overflow: hidden;
-  border-radius: 4px;
   border: 2px solid ${(props) => props.theme.color.tech.border};
   border-radius: 8px;
   box-shadow: 0 0 4px ${(props) => props.theme.color.tech.border};
@@ -118,10 +127,50 @@ const ImageSkeleton = styled.div`
   animation: ${SkeletonAnimation} 1.5s infinite linear;
 `;
 
-const Title = styled.h2`
+const ProjectInformationHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 24px 0px 12px 0px;
+`;
+
+const Title = styled.h2`
   font-size: 1.75rem;
   color: var(--main-color);
+`;
+
+const TagsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+`;
+
+const TagCard = styled.span`
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  &.pessoal {
+    background-color: #f09000;
+    color: #000;
+  }
+  &.profissional {
+    background-color: #f00000;
+    color: #f5f5f5;
+  }
+  &.curso {
+    background-color: #d400f0;
+    color: #f5f5f5;
+  }
+  &.desenvolvimento {
+    background-color: #0084f0;
+    color: #f5f5f5;
+  }
+  &.finalizado {
+    background-color: #00f000;
+    color: #111;
+  }
 `;
 
 const Description = styled.p`
@@ -147,7 +196,7 @@ const TechnologiesCard = styled.li`
   list-style: none;
   background-color: ${(props) => props.theme.color.tech.card};
   padding: 12px 20px;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 1.25rem;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   color: ${(props) => props.theme.color.text};
@@ -166,7 +215,7 @@ const LinkButton = styled.a`
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   color: #000;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 1.25rem;
   font-weight: 500;
   transition: 0.1s;
