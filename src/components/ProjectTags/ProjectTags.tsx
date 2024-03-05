@@ -21,8 +21,9 @@ const ProjectTags = ({ tags }: { tags: Array<Tags> }) => {
 const TagsContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 8px;
+  margin: 8px 0px;
 `;
 
 const TagCard = styled.span`

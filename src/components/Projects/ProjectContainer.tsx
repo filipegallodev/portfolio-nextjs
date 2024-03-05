@@ -126,16 +126,22 @@ const Container = styled.ul`
 `;
 
 const AccordionStyled = styled(Accordion)`
-  background-color: ${(props) => props.theme.color.tech.container};
-  color: ${(props) => props.theme.color.text};
+  &.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    background-color: ${(props) => props.theme.color.tech.container};
+    color: ${(props) => props.theme.color.text};
+  }
 `;
 
 const AccordionSummaryStyled = styled(AccordionSummary)`
-  font-size: 1.125rem;
+  &.css-o4b71y-MuiAccordionSummary-content {
+    font-size: 1.125rem;
+  }
 `;
 
 const ExpandMoreRoundedStyled = styled(ExpandMoreRounded)`
-  color: ${(props) => props.theme.color.text};
+  &.css-i4bv87-MuiSvgIcon-root {
+    color: ${(props) => props.theme.color.text};
+  }
 `;
 
 const RadioGroupStyled = styled(RadioGroup)`

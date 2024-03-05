@@ -27,8 +27,8 @@ const ProjectInfo = (project: IProject) => {
       </ImageContainer>
       <ProjectInformationHeader>
         <Title>{name}</Title>
-        <ProjectTags tags={tags} />
       </ProjectInformationHeader>
+      <ProjectTags tags={tags} />
       <Description>{description}</Description>
       <SubTitle>Tecnologias</SubTitle>
       <TechnologiesList>

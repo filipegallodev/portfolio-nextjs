@@ -28,8 +28,8 @@ const ProjectCard = (project: IProject) => {
       <InfoContainer>
         <ProjectInformationHeader>
           <Name>{name}</Name>
-          <ProjectTags tags={tags} />
         </ProjectInformationHeader>
+        <ProjectTags tags={tags} />
         <TechContainer>
           {technologies.map((tech, index) => {
             if (index < maxTechs) {
