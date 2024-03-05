@@ -94,7 +94,7 @@ const ProjectInformationHeader = styled.div`
   margin-bottom: 8px;
 `;
 
-const Name = styled.h2`
+const Name = styled.h3`
   font-size: 1.125rem;
   font-weight: 600;
   color: ${(props) => props.theme.color.title};
