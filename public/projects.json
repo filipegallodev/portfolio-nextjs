@@ -1,6 +1,6 @@
 [
   {
-    "name": "StockApp! (WIP)",
+    "name": "StockApp!",
     "id": "stock-app",
     "description": "Aplicação web full-stack de um sistema de gestão que atua para que o usuário obtenha um melhor controle sobre as suas vendas, o seu estoque de produtos e os clientes que o seu comércio possui.",
     "imageUrl": {
