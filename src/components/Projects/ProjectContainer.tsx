@@ -126,20 +126,20 @@ const Container = styled.ul`
 `;
 
 const AccordionStyled = styled(Accordion)`
-  &.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  &.MuiPaper-root {
     background-color: ${(props) => props.theme.color.tech.container};
     color: ${(props) => props.theme.color.text};
   }
 `;
 
 const AccordionSummaryStyled = styled(AccordionSummary)`
-  &.css-o4b71y-MuiAccordionSummary-content {
+  &.MuiAccordionSummary-content {
     font-size: 1.125rem;
   }
 `;
 
 const ExpandMoreRoundedStyled = styled(ExpandMoreRounded)`
-  &.css-i4bv87-MuiSvgIcon-root {
+  &.MuiSvgIcon-root {
     color: ${(props) => props.theme.color.text};
   }
 `;
