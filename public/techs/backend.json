@@ -1,13 +1,5 @@
 [
   {
-    "name": "Spring Boot",
-    "imageUrl": {
-      "src": "/assets/logos/spring-logo.png",
-      "width": 128,
-      "height": 128
-    }
-  },
-  {
     "name": "Java",
     "imageUrl": {
       "src": "/assets/logos/java-logo.svg",
@@ -16,9 +8,25 @@
     }
   },
   {
-    "name": "Node.js",
+    "name": "Spring Boot",
     "imageUrl": {
-      "src": "/assets/logos/nodejs-logo.svg",
+      "src": "/assets/logos/spring-logo.png",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Spring Data",
+    "imageUrl": {
+      "src": "/assets/logos/spring-data-logo.png",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Spring Security",
+    "imageUrl": {
+      "src": "/assets/logos/spring-security-logo.png",
       "width": 128,
       "height": 128
     }
@@ -27,6 +35,14 @@
     "name": "PostgreSQL",
     "imageUrl": {
       "src": "/assets/logos/postgresql-logo.svg",
+      "width": 128,
+      "height": 128
+    }
+  },
+  {
+    "name": "Node.js",
+    "imageUrl": {
+      "src": "/assets/logos/nodejs-logo.svg",
       "width": 128,
       "height": 128
     }
